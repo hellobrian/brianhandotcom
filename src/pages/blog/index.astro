@@ -18,13 +18,15 @@ const posts = (await getCollection("blog")).sort(
           posts.map((post) => (
             <li>
               <a href={`/blog/${post.slug}/`}>
-                <Image
-                  width={720}
-                  height={360}
-                  src={post.data.cover}
-                  alt={post.data.coverAlt}
-                  transition:name={`cover-image-${post.data.title}`}
-                />
+                {post.data.cover && (
+                  <Image
+                    width={720}
+                    height={360}
+                    src={post.data.cover}
+                    alt={`${post.data.coverAlt}`}
+                    transition:name={`cover-image-${post.data.title}`}
+                  />
+                )}
                 <h4
                   class="title"
                   transition:name={`blog-title-${post.data.title}`}

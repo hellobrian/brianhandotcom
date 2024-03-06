@@ -1,14 +1,19 @@
 ---
 import Layout from "../layouts/BlogPost.astro";
+import { Image } from "astro:assets";
 ---
 
 <Layout
   title="About Me"
   description="Lorem ipsum dolor sit amet"
   pubDate={new Date("August 08 2021")}
-  cover="/blog-placeholder-about.jpg"
-  coverAlt="cover alt"
 >
+  <Image
+    width={1020}
+    height={510}
+    src={"/blog-placeholder-about.jpg"}
+    alt={`picture of Brian Han`}
+  />
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo
@@ -71,3 +76,8 @@ import Layout from "../layouts/BlogPost.astro";
     magna.
   </p>
 </Layout>
+<style>
+  img {
+    box-shadow: var(--box-shadow);
+  }
+</style>
