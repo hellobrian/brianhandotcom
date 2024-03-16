@@ -15,32 +15,34 @@ const posts = (await getCollection("blog")).sort(
     <section>
       <ul>
         {
-          posts.map((post, index) => (
-            <li>
-              <a href={`/blog/${post.slug}/`}>
-                {post.data.cover && (
-                  <Image
-                    loading={index <= 2 ? "eager" : "lazy"}
-                    aria-hidden="true"
-                    width={720}
-                    height={360}
-                    src={post.data.cover}
-                    alt={`${post.data.coverAlt}`}
-                    transition:name={`cover-image-${post.data.title}`}
-                  />
-                )}
-                <h4
-                  class="title"
-                  transition:name={`blog-title-${post.data.title}`}
-                >
-                  {post.data.title}
-                </h4>
-                <p class="date">
-                  <FormattedDate date={post.data.pubDate} />
-                </p>
-              </a>
-            </li>
-          ))
+          posts
+            .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+            .map((post, index) => (
+              <li>
+                <a href={`/blog/${post.slug}/`}>
+                  {post.data.cover && (
+                    <Image
+                      loading={index <= 2 ? "eager" : "lazy"}
+                      aria-hidden="true"
+                      width={720}
+                      height={360}
+                      src={post.data.cover}
+                      alt={`${post.data.coverAlt}`}
+                      transition:name={`cover-image-${post.data.title}`}
+                    />
+                  )}
+                  <h4
+                    class="title"
+                    transition:name={`blog-title-${post.data.title}`}
+                  >
+                    {post.data.title}
+                  </h4>
+                  <p class="date">
+                    <FormattedDate date={post.data.pubDate} />
+                  </p>
+                </a>
+              </li>
+            ))
         }
       </ul>
     </section>
