@@ -29,6 +29,7 @@ const posts = (await getCollection("blog")).sort(
                       src={post.data.cover}
                       alt={`${post.data.coverAlt}`}
                       transition:name={`cover-image-${post.data.title}`}
+                      quality={"max"}
                     />
                   )}
                   <h4
