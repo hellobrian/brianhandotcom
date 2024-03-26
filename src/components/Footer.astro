@@ -4,6 +4,13 @@ const today = new Date();
 
 <footer>
   &copy; {today.getFullYear()} Brian Han. All rights reserved.
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </nav>
   <div class="social-links">
     <a href="https://github.com/hellobrian" target="_blank">
       <span class="sr-only">Go to Brian's GitHub repo</span>
@@ -28,6 +35,15 @@ const today = new Date();
     background: linear-gradient(var(--gray-gradient)) no-repeat;
     color: rgb(var(--gray));
     text-align: center;
+  }
+
+  nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
   }
 
   @media screen and (max-width: 480px) {
