@@ -24,8 +24,8 @@ const posts = (await getCollection("blog")).sort(
                     <Image
                       loading={index <= 2 ? "eager" : "lazy"}
                       aria-hidden="true"
-                      width={720}
-                      height={360}
+                      width={1920}
+                      height={1280}
                       src={post.data.cover}
                       alt={`${post.data.coverAlt}`}
                       transition:name={`cover-image-${post.data.title}`}

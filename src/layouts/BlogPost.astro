@@ -5,7 +5,7 @@ import { Image } from "astro:assets";
 type Props = CollectionEntry<"blog">["data"];
 import BaseLayout from "./BaseLayout.astro";
 
-const { title, description, pubDate, updatedDate, cover, coverAlt } =
+const { title, description, pubDate, updatedDate, cover, coverAlt, tags } =
   Astro.props;
 ---
 
@@ -47,6 +47,20 @@ const { title, description, pubDate, updatedDate, cover, coverAlt } =
           <hr />
         </div>
         <slot />
+        {
+          tags && (
+            <div class="tags">
+              <h3 class="title">Tags</h3>
+              <ul>
+                {tags.map((tag) => (
+                  <li>
+                    <a href={`/tags/${tag}`}>{tag}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
       </div>
     </article>
   </main>
@@ -89,5 +103,17 @@ const { title, description, pubDate, updatedDate, cover, coverAlt } =
   }
   .last-updated-on {
     font-style: italic;
+  }
+  .tags .title {
+    text-align: center;
+  }
+  .tags ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    max-inline-size: 100%;
   }
 </style>
