@@ -12,25 +12,3 @@ tags: [Ricoh GRIIIx]
 ![](./images/greenhouse.png)
 ![](./images/pink-flamingo.png)
 ![](./images/thai-iced-tea.png)
-
-<!-- <style>
-  @scope {
-    p {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-auto-flow: dense;
-      gap: 1rem;
-    }
-
-    p img {
-      object-fit: cover;
-      height: 100%;
-    }
-
-    p img:nth-child(4n) {
-      grid-column-end: span 2;
-      grid-row-end: span 2;
-    }
-  }
-</style> -->
