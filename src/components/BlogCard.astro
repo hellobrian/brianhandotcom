@@ -24,12 +24,12 @@ const { slug, title, pubDate, cover, coverAlt, loading } = Astro.props;
     <Image
       loading={loading}
       aria-hidden="true"
-      width={1920}
-      height={1280}
+      width={1280}
+      height={720}
       src={cover}
       alt={`${coverAlt}`}
       transition:name={`cover-image-${title}`}
-      quality={"max"}
+      quality="high"
     />
     <h4 class="title" transition:name={`blog-title-${title}`}>
       {title}
