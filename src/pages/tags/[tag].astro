@@ -48,13 +48,20 @@ const { posts } = Astro.props;
 
 <style>
   ul {
+    display: flex;
     padding: 0;
+    list-style: none;
+    flex-direction: column;
+    gap: 2em;
   }
 
   h2 {
     text-align: center;
   }
-  ul {
-    list-style: none;
+
+  @media screen and (width < 480px) {
+    ul {
+      gap: 1em;
+    }
   }
 </style>

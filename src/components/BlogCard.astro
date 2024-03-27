@@ -82,7 +82,8 @@ const { slug, title, pubDate, cover, coverAlt, loading } = Astro.props;
   a:hover img {
     box-shadow: var(--box-shadow);
   }
-  @media (max-width: 720px) {
+
+  @media (width < 720px) {
     li {
       width: 100%;
       text-align: center;
@@ -92,6 +93,12 @@ const { slug, title, pubDate, cover, coverAlt, loading } = Astro.props;
     }
     li:first-child .title {
       font-size: 1.563em;
+    }
+  }
+
+  @media screen and (width < 480px) {
+    li:first-child .title {
+      font-size: var(--step-1);
     }
   }
 </style>
