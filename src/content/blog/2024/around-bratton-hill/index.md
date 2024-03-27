@@ -9,8 +9,6 @@ tags: [Ricoh GRIIIx, Fuji X100V]
 
 A few photos taken on different walks to my neighborhood park. Some photos were taken on my Ricoh GRIIIx and the rest with my Fuji X100V.
 
-<div>
-
 ![](./images/best-buds.png)
 ![](./images/bike.png)
 ![](./images/construction.png)
