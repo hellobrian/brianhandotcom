@@ -23,35 +23,9 @@ All photos are _mostly_ straight out of camera - I cropped in on a few photos, a
 ![alt text](./images/nordstrom-lines.png)
 ![alt text](./images/nordstrom.png)
 ![alt text](./images/stairwell.png)
-
-<div>
-
 ![alt text](./images/houndstooth.png)
 ![alt text](./images/wonderbar.png)
 ![alt text](./images/A-triple-asteriks.png)
 ![alt text](./images/four-buds-outside-rh.png)
 ![alt text](./images/leaving-kung-fu-bar.png)
 ![alt text](./images/girl-tilted.png)
-
-<style>
-  @scope  {
-  p {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    gap: 1rem;
-    margin-top: -30px;
-  }
-
-  p img:first-child {
-    grid-row: span 2;
-    object-fit: cover;
-    height: 100%;
-  }
-
-  p img:nth-child(5n) {
-    grid-row: span 2;
-  }
-}
-</style>
-</div>
