@@ -74,6 +74,8 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Tanker", sans-serif;
+  font-weight: 400;
   margin: 0 0 0.5rem 0;
   color: rgb(var(--black));
   line-height: 1.2;
@@ -108,16 +110,24 @@ b {
   font-weight: 700;
 }
 a {
-  color: var(--accent);
+  color: currentColor;
+  text-decoration-color: var(--accent-light);
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
 }
 a:hover {
-  color: var(--accent);
+  text-decoration-color: var(--accent-light);
 }
 p {
   margin-bottom: 1em;
 }
 .prose p {
   margin-bottom: 2em;
+}
+.prose ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
 }
 textarea {
   width: 100%;

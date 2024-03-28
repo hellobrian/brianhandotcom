@@ -4,6 +4,7 @@ import FormattedDate from "../components/FormattedDate.astro";
 import { Image } from "astro:assets";
 type Props = CollectionEntry<"blog">["data"];
 import BaseLayout from "./BaseLayout.astro";
+import Tags from "../components/Tags.astro";
 
 const { title, description, pubDate, updatedDate, cover, coverAlt, tags } =
   Astro.props;
@@ -47,20 +48,7 @@ const { title, description, pubDate, updatedDate, cover, coverAlt, tags } =
           <hr />
         </div>
         <slot />
-        {
-          tags && (
-            <div class="tags">
-              <h3 class="title">Tags</h3>
-              <ul>
-                {tags.map((tag) => (
-                  <li>
-                    <a href={`/tags/${tag}`}>{tag}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )
-        }
+        <Tags />
       </div>
     </article>
   </main>
@@ -72,6 +60,7 @@ const { title, description, pubDate, updatedDate, cover, coverAlt, tags } =
     max-width: 100%;
     margin: 0;
   }
+
   .hero-image {
     width: 100%;
   }
@@ -103,18 +92,6 @@ const { title, description, pubDate, updatedDate, cover, coverAlt, tags } =
   }
   .last-updated-on {
     font-style: italic;
-  }
-  .tags .title {
-    text-align: center;
-  }
-  .tags ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    list-style: none;
-    justify-content: center;
-    padding: 0;
-    max-inline-size: 100%;
   }
 
   @media screen and (width < 480px) {
