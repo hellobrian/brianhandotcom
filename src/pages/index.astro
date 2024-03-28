@@ -3,6 +3,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { getCollection } from "astro:content";
 import BlogCard from "../components/BlogCard.astro";
+import BlogCardList from "../components/BlogCardList.astro";
+import Tags from "../components/Tags.astro";
 
 // Get all entries from a collection.
 // Requires the name of the collection as an argument.
@@ -10,19 +12,15 @@ import BlogCard from "../components/BlogCard.astro";
 const allBlogPosts = await getCollection("blog");
 
 const posts = allBlogPosts.filter((blog) =>
-  blog.data.tags?.includes("featured")
+  blog.data.tags?.includes("Featured")
 );
-
-const uniqueTags = [
-  ...new Set(allBlogPosts.map((post) => post.data.tags).flat()),
-].filter((tag) => tag !== undefined);
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <main>
     <section>
       <h2>Featured</h2>
-      <ul>
+      <BlogCardList>
         {
           posts
             .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
@@ -37,19 +35,10 @@ const uniqueTags = [
               />
             ))
         }
-      </ul>
+      </BlogCardList>
     </section>
-    <section class="tags">
-      <h2 class="title">Tags</h2>
-      <ul>
-        {
-          uniqueTags.map((tag) => (
-            <li>
-              <a href={`/tags/${tag}`}>{tag}</a>
-            </li>
-          ))
-        }
-      </ul>
+    <section>
+      <Tags />
     </section>
   </main>
 </BaseLayout>
@@ -57,22 +46,5 @@ const uniqueTags = [
 <style>
   h2 {
     text-align: center;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .tags .title {
-    text-align: center;
-  }
-  .tags ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    list-style: none;
-    justify-content: center;
-    padding: 0;
-    max-inline-size: 100%;
   }
 </style>
