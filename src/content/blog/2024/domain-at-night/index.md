@@ -4,7 +4,7 @@ description: "First photo walk with the Fuji X100V"
 pubDate: "Mar 20 2024"
 cover: "./images/mercedes.png"
 coverAlt: "A man with red shorts walks into a Nordstrom at night"
-tags: [featured, Fuji X100V, photography]
+tags: [Featured, Fuji X100V]
 ---
 
 I recently got a used Fuji X100V, and brought it out tonight for some night photography.
