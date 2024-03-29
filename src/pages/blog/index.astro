@@ -14,6 +14,7 @@ const posts = (await getCollection("blog")).sort(
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <main>
     <section>
+      <h2>Latest</h2>
       <BlogCardList>
         {
           posts
@@ -41,7 +42,11 @@ const posts = (await getCollection("blog")).sort(
   main {
     display: grid;
     gap: 2rem;
-    margin: 1rem auto;
+    margin: 0 auto;
     width: 960px;
+  }
+
+  h2 {
+    text-align: center;
   }
 </style>
