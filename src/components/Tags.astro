@@ -9,12 +9,20 @@ const allBlogPosts = await getCollection("blog");
 const uniqueTags = [
   ...new Set(allBlogPosts.map((post) => post.data.tags).flat()),
 ].filter((tag) => tag !== undefined);
+
+interface Props {
+  tags?: string[];
+}
+
+const { tags } = Astro.props;
+
+const tagsArray = tags ?? uniqueTags;
 ---
 
 <h2 class="title">Tags</h2>
 <ul>
   {
-    uniqueTags.map((tag) => (
+    tagsArray.map((tag) => (
       <li>
         <a href={`/tags/${tag}`}>{tag}</a>
       </li>
