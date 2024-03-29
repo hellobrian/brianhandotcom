@@ -1,5 +1,5 @@
 ---
-title: "Tiger80 Lite + Olivia"
+title: "Tiger 80 Lite + Olivia"
 description: "I don't have enough pink boards for Olivia"
 pubDate: "Mar 29 2024"
 cover: "./images/cover.png"
