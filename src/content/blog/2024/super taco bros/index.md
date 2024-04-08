@@ -36,3 +36,5 @@ Here's what I got:
 ![](./images/tripas-handheld-2.png)
 
 Since it's so close to home, I'm definitely going back for more.
+
+> Photos taken with Fuji X100V using classic negative and reggie's portra film simulations. Camera set to aperture priority going between f/4 and f/8. JPEGs lightly edited in Apple Photos.
