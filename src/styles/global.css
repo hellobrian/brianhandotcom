@@ -130,6 +130,9 @@ p {
   padding-left: 1rem;
   margin-bottom: 2em;
 }
+.prose p + ul {
+  margin-top: -1.5em;
+}
 textarea {
   width: 100%;
   font-size: 16px;
@@ -144,6 +147,9 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+}
+.prose img:last-of-type {
+  margin-bottom: 2em;
 }
 code {
   padding: 2px 5px;

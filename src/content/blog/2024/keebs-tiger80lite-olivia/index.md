@@ -4,7 +4,7 @@ description: "I don't have enough pink boards for Olivia"
 pubDate: "Mar 29 2024"
 cover: "./images/cover.png"
 coverAlt: "A Tiger 80 Lite keyboard with Cherry Olivia APL keycaps"
-tags: [Keyboards, Tiger 80 Lite, Olivia, Canon 5D Mark II]
+tags: [Keyboards, Tiger 80 Lite, Olivia, Canon 5D Mark II, Featured]
 ---
 
 ## Overview
