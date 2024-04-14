@@ -16,21 +16,18 @@ tags: [Fuji X100V]
 
 ## Cool dudes, and their rides
 
-![](./images/dude-bike-1.png)
-![](./images/dude-bike-2.png)
-![](./images/van-dude.png)
-![](./images/van-dude-wide-bw.png)
 ![](./images/dude-bike-3.png)
+![](./images/van-dude.png)
+![](./images/dude-bike-2.png)
+![](./images/van-dude-wide-bw.png)
 
 ---
 
 ## More from Manor
 
 ![](./images/graffiti.png)
-![](./images/graffiti-bw.png)
 ![](./images/kwik.png)
 ![](./images/planet-k-1.png)
-![](./images/planet-k-2.png)
 ![](./images/haymaker.png)
 ![](./images/howdy-truck.png)
 

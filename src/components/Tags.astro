@@ -7,7 +7,12 @@ import { getCollection } from "astro:content";
 const allBlogPosts = await getCollection("blog");
 
 const uniqueTags = [
-  ...new Set(allBlogPosts.map((post) => post.data.tags).flat()),
+  ...new Set(
+    allBlogPosts
+      .filter((post) => post.data.isPublished)
+      .map((post) => post.data.tags)
+      .flat()
+  ),
 ].filter((tag) => tag !== undefined);
 
 interface Props {

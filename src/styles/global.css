@@ -168,7 +168,7 @@ hr {
   justify-items: center;
 }
 
-.prose > *:not(img) {
+.prose > *:not(img, .img) {
   grid-column: 3 / span 1;
 }
 
