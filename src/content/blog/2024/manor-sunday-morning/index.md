@@ -21,7 +21,7 @@ For me, the tough part with wanting to use both of these film recipes is taking 
 
 ## Cool dudes, and their rides
 
-I was surprised to get photos of dudes riding their bikes that weren't terrible! When I wanted to grab some photos of these guys,I realized I should try to learn how to range focus. I'm using single point auto focus, and it's just a little too slow for these quick up-close moments.
+I was surprised to get photos of dudes riding their bikes that weren't terrible! I was using single-point auto focus, and felt like my shots were getting off a little slow, but it worked out. I'll have to start learning how to properly range focus for moments like this.
 
 ![](./images/dude-bike-3.png)
 ![](./images/van-dude.png)
