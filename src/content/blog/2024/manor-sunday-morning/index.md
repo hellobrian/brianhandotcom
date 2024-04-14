@@ -30,5 +30,3 @@ tags: [Fuji X100V, Featured]
 ![](./images/planet-k-1.png)
 ![](./images/haymaker.png)
 ![](./images/howdy-truck.png)
-
----

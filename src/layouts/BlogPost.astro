@@ -48,6 +48,7 @@ const { title, description, pubDate, updatedDate, cover, coverAlt, tags } =
         </div>
         <hr />
         <slot />
+        <hr />
         <Tags tags={tags} />
       </div>
     </article>
@@ -59,6 +60,7 @@ const { title, description, pubDate, updatedDate, cover, coverAlt, tags } =
     justify-content: center;
   }
   .title {
+    width: 100%;
     text-align: center;
   }
 </style>

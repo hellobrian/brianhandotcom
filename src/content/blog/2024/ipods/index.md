@@ -7,8 +7,6 @@ coverAlt: "A custom iPod Classic with black clickwheel and blue aluminum shell"
 tags: []
 ---
 
-![holding a custom iPod Classic with black clickwheel and blue aluminum shell](./images/ipod-hand.png)
-
 I started using iPods again. Here's what makes them work for me in 2024:
 
 - **Sync music with Finder:** all of that syncing stuff got moved from iTunes into Finder. As long as you have local music in your Apple Music library, Finder will sync over to your iPod just like iTunes back in the day. This works for me because I don't rely on music streaming anymore.
@@ -19,8 +17,4 @@ I started using iPods again. Here's what makes them work for me in 2024:
 
 - **Headphone jack**: Wired headphones! means less dependencies on things failing like bluetooth, battery, or losing your left airpod.
 
-![A custom iPod Classic with black clickwheel and blue aluminum shell on a wooden stool with some random sneakers in the background](./images/ipod-wide.png)
-
-## My Collection
-
-TBD
+![holding a custom iPod Classic with black clickwheel and blue aluminum shell](./images/ipod-hand.png)

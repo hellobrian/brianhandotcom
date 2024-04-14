@@ -162,6 +162,7 @@ hr {
 .prose {
   display: grid;
   grid-template-columns: 1fr 1fr 720px 1fr 1fr;
+  grid-auto-flow: dense;
   gap: 1rem;
   padding: 1em;
   color: rgb(var(--gray-dark));
@@ -170,6 +171,7 @@ hr {
 
 .prose > *:not(img, .img) {
   grid-column: 3 / span 1;
+  width: 100%;
 }
 
 .prose p {
@@ -183,11 +185,13 @@ hr {
   grid-column: 2 / span 3;
 }
 
-@media (width < 720px) {
+@media screen and (width < 720px) {
   .prose {
     grid-template-columns: 1fr;
+    padding: 0;
   }
-  .prose > * {
+  .prose > *:not(img, .img),
+  .prose > img {
     grid-column: 1 / -1;
   }
 }
