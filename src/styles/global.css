@@ -169,7 +169,7 @@ hr {
   justify-items: center;
 }
 
-.prose > *:not(img, .img) {
+.prose > *:not(img, ul, .img) {
   grid-column: 3 / span 1;
   width: 100%;
 }
@@ -185,6 +185,14 @@ hr {
   grid-column: 2 / span 3;
 }
 
+.prose > ul {
+  margin: 0;
+  padding: 0;
+  grid-column: 3 / span 1;
+  justify-self: left;
+  margin-left: 3rem;
+}
+
 @media screen and (width < 720px) {
   .prose {
     grid-template-columns: 1fr;
@@ -193,6 +201,9 @@ hr {
   .prose > *:not(img, .img),
   .prose > img {
     grid-column: 1 / -1;
+  }
+  .prose > ul {
+    margin-left: 1rem;
   }
 }
 
