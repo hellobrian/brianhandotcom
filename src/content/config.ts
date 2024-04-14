@@ -16,6 +16,7 @@ const blog = defineCollection({
       }),
       coverAlt: z.string(),
       tags: z.array(z.string()),
+      isPublished: z.boolean().optional().default(true),
     }),
 });
 

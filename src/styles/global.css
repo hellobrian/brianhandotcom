@@ -57,14 +57,13 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   color: rgb(var(--gray-dark));
-  /* font-size: 20px; */
   font-size: var(--step-0);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 main {
-  width: 720px;
-  max-width: calc(100% - 2em);
+  /* width: 720px;
+  max-width: calc(100% - 2em); */
   margin: auto;
   padding: 3em 1em;
 }
@@ -76,7 +75,7 @@ h5,
 h6 {
   font-family: "Tanker", sans-serif;
   font-weight: 400;
-  margin: 0 0 0.5rem 0;
+  margin: 0;
   color: rgb(var(--black));
   line-height: 1.2;
 }
@@ -118,28 +117,7 @@ a {
 a:hover {
   text-decoration-color: var(--accent-light);
 }
-p {
-  margin-bottom: 1em;
-}
-.prose p {
-  margin-bottom: 2em;
-}
-.prose ul {
-  margin: 0;
-  padding: 0;
-  padding-left: 1rem;
-  margin-bottom: 2em;
-}
-.prose p + ul {
-  margin-top: -1.5em;
-}
-textarea {
-  width: 100%;
-  font-size: 16px;
-}
-input {
-  font-size: 16px;
-}
+
 table {
   width: 100%;
 }
@@ -148,9 +126,7 @@ img {
   height: auto;
   border-radius: 8px;
 }
-.prose img:last-of-type {
-  margin-bottom: 2em;
-}
+
 code {
   padding: 2px 5px;
   background-color: rgb(var(--gray-light));
@@ -167,11 +143,12 @@ blockquote {
   border-left: 4px solid var(--accent);
   padding: 0 0 0 20px;
   margin: 0px;
-  font-size: 1.333em;
+  /* font-size: 1.333em; */
 }
 hr {
   border: none;
   border-top: 1px solid rgb(var(--gray-light));
+  width: 100%;
 }
 @media (max-width: 720px) {
   body {
@@ -179,6 +156,55 @@ hr {
   }
   main {
     padding: 1em;
+  }
+}
+
+.prose {
+  display: grid;
+  grid-template-columns: 1fr 1fr 720px 1fr 1fr;
+  grid-auto-flow: dense;
+  gap: 1rem;
+  padding: 1em;
+  color: rgb(var(--gray-dark));
+  justify-items: center;
+}
+
+.prose > *:not(img, ul, .img) {
+  grid-column: 3 / span 1;
+  width: 100%;
+}
+
+.prose p {
+  margin: 0;
+}
+
+.prose > h2 {
+  width: 100%;
+  margin-top: 1rem;
+}
+.prose > img {
+  grid-column: 2 / span 3;
+}
+
+.prose > ul {
+  margin: 0;
+  padding: 0;
+  grid-column: 3 / span 1;
+  justify-self: left;
+  margin-left: 3rem;
+}
+
+@media screen and (width < 720px) {
+  .prose {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .prose > *:not(img, .img),
+  .prose > img {
+    grid-column: 1 / -1;
+  }
+  .prose > ul {
+    margin-left: 1rem;
   }
 }
 

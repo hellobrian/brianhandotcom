@@ -6,9 +6,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import BlogCard from "../../components/BlogCard.astro";
 import Tags from "../../components/Tags.astro";
 
-const posts = (await getCollection("blog")).sort(
-  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
-);
+const posts = (await getCollection("blog"))
+  .filter((post) => post.data.isPublished)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
@@ -17,18 +17,16 @@ const posts = (await getCollection("blog")).sort(
       <h2>Latest</h2>
       <BlogCardList>
         {
-          posts
-            .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-            .map((post, index) => (
-              <BlogCard
-                slug={post.slug}
-                title={post.data.title}
-                pubDate={post.data.pubDate}
-                cover={post.data.cover}
-                coverAlt={post.data.coverAlt}
-                loading={index <= 2 ? "eager" : "lazy"}
-              />
-            ))
+          posts.map((post, index) => (
+            <BlogCard
+              slug={post.slug}
+              title={post.data.title}
+              pubDate={post.data.pubDate}
+              cover={post.data.cover}
+              coverAlt={post.data.coverAlt}
+              loading={index <= 2 ? "eager" : "lazy"}
+            />
+          ))
         }
       </BlogCardList>
     </section>
@@ -43,10 +41,11 @@ const posts = (await getCollection("blog")).sort(
     display: grid;
     gap: 2rem;
     margin: 0 auto;
-    width: 960px;
+    max-width: 960px;
   }
 
   h2 {
     text-align: center;
+    margin-bottom: 1rem;
   }
 </style>

@@ -7,7 +7,12 @@ import { getCollection } from "astro:content";
 const allBlogPosts = await getCollection("blog");
 
 const uniqueTags = [
-  ...new Set(allBlogPosts.map((post) => post.data.tags).flat()),
+  ...new Set(
+    allBlogPosts
+      .filter((post) => post.data.isPublished)
+      .map((post) => post.data.tags)
+      .flat()
+  ),
 ].filter((tag) => tag !== undefined);
 
 interface Props {
@@ -19,22 +24,24 @@ const { tags } = Astro.props;
 const tagsArray = tags ?? uniqueTags;
 ---
 
-<h2 class="title">Tags</h2>
-<ul>
-  {
-    tagsArray.map((tag) => (
-      <li>
-        <a href={`/tags/${tag}`}>{tag}</a>
-      </li>
-    ))
-  }
-</ul>
+<div class="tags">
+  <h2 class="title">Tags</h2>
+  <ul>
+    {
+      tagsArray.map((tag) => (
+        <li>
+          <a href={`/tags/${tag}`}>{tag}</a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
 
 <style>
   .title {
     text-align: center;
   }
-  ul {
+  .tags > ul {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
