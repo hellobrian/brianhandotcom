@@ -1,10 +1,10 @@
 ---
-title: "Around Manor"
+title: "Manor Sunday Morning"
 description: "Tacos, and dudes on bikes"
 pubDate: "April 14 2024"
 cover: "./images/cover.png"
 coverAlt: "A woman making tacos behind a glass window"
-tags: [Fuji X100V]
+tags: [Fuji X100V, Featured]
 ---
 
 ## El Chilito on Manor

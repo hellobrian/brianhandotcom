@@ -4,7 +4,7 @@ description: "Party like it's 2004"
 pubDate: "Mar 16 2024"
 cover: "./images/ipod-crop.png"
 coverAlt: "A custom iPod Classic with black clickwheel and blue aluminum shell"
-tags: [Featured]
+tags: []
 ---
 
 ![holding a custom iPod Classic with black clickwheel and blue aluminum shell](./images/ipod-hand.png)
