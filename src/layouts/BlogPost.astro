@@ -17,8 +17,8 @@ const { title, description, pubDate, updatedDate, cover, coverAlt, tags } =
         {
           cover && (
             <Image
-              width={1020}
-              height={510}
+              width={1920}
+              height={1080}
               src={cover}
               alt={`${coverAlt}`}
               transition:name={`cover-image-${title}`}
@@ -45,58 +45,20 @@ const { title, description, pubDate, updatedDate, cover, coverAlt, tags } =
           <h1 transition:name={`blog-title-${title}`}>
             {title}
           </h1>
-          <hr />
         </div>
+        <hr />
         <slot />
         <Tags tags={tags} />
       </div>
     </article>
   </main>
 </BaseLayout>
-
 <style>
-  main {
-    width: calc(100% - 2em);
-    max-width: 100%;
-    margin: 0;
-  }
-
   .hero-image {
-    width: 100%;
-  }
-  .hero-image img {
-    display: block;
-    margin: 0 auto;
-    border-radius: 12px;
-    box-shadow: var(--box-shadow);
-  }
-  .prose {
-    width: 1000px;
-    max-width: calc(100% - 2em);
-    margin: auto;
-    padding: 1em;
-    color: rgb(var(--gray-dark));
+    display: flex;
+    justify-content: center;
   }
   .title {
-    margin-bottom: 1em;
-    padding: 1em 0;
     text-align: center;
-    line-height: 1;
-  }
-  .title h1 {
-    margin: 0 0 0.5em 0;
-  }
-  .date {
-    margin-bottom: 0.5em;
-    color: rgb(var(--gray));
-  }
-  .last-updated-on {
-    font-style: italic;
-  }
-
-  @media screen and (width < 480px) {
-    h1 {
-      font-size: var(--step-2);
-    }
   }
 </style>

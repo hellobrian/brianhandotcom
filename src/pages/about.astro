@@ -11,12 +11,18 @@ import { Image } from "astro:assets";
       src={"/images/blog-placeholder-about.jpg"}
       alt={`picture of Brian Han`}
     />
-    <p>Hello! I'm Brian. I'm a UX Developer based in Austin, TX.</p>
+    <h2>Hello!</h2>
+    <p>I'm Brian. I'm a UX Developer based in Austin, TX.</p>
   </main>
 </BaseLayout>
 <style>
+  main {
+    max-width: 720px;
+  }
+
   img {
     box-shadow: var(--box-shadow);
-    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
   }
 </style>
