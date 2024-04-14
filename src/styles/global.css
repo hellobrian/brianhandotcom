@@ -133,6 +133,10 @@ p {
 .prose p + ul {
   margin-top: -1.5em;
 }
+.prose img + h2,
+.prose img + h3 {
+  margin-top: 2em;
+}
 textarea {
   width: 100%;
   font-size: 16px;
