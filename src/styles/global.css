@@ -194,6 +194,10 @@ hr {
   margin-left: 3rem;
 }
 
+.prose p + img {
+  margin-top: 1rem;
+}
+
 @media screen and (width < 720px) {
   .prose {
     grid-template-columns: 1fr;

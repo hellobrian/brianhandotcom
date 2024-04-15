@@ -23,6 +23,8 @@ For me, the tough part with wanting to use both of these film recipes is taking 
 
 I was surprised to get photos of dudes riding their bikes that weren't terrible! I was using single-point auto focus, and felt like my shots were getting off a little slow, but it worked out. I'll have to start learning how to properly range focus for moments like this.
 
+Also, I'm pretty sure one of these guys is headed to the kite festival. Can you guess who?
+
 ![](./images/dude-bike-3.png)
 ![](./images/van-dude.png)
 ![](./images/dude-bike-2.png)
