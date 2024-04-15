@@ -28,4 +28,4 @@ All photos are _mostly_ straight out of camera - I cropped in on a few photos, a
 ![A full restaurant](./images/A-triple-asteriks.png)
 ![A group of friends walking down a street](./images/four-buds-outside-rh.png)
 ![Two girls standing outside of a bar](./images/leaving-kung-fu-bar.png)
-![A tilted photo of a girl walking into frame in front of a bar](./images/girl-tilted.png)
+![two people sitting the same in different shops](./images/sitting-the-same.png)
