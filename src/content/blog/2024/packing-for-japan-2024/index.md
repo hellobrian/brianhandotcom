@@ -19,7 +19,7 @@ Either way, this bag choice was a last-minute decision - I really liked the idea
 
 With the bottom packed out, the main upper compartment can carry my sling and a pouch that holds my camera gear.
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+<div>
 
 ![](./images/cpap.webp)
 ![](./images/handbag1.webp)
@@ -28,7 +28,7 @@ With the bottom packed out, the main upper compartment can carry my sling and a 
 
 The rolling-carry on luggage has one side packed with my empty duffel, and the other side is clothes: socks, underwear, tshirts, one extra pair of pants, and a belt.
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+<div>
 
 ![](./images/roller-luggage-open.webp)
 ![](./images/roller-luggage-and-handbag.webp)
@@ -37,9 +37,8 @@ The rolling-carry on luggage has one side packed with my empty duffel, and the o
 
 ## In transit
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+<div>
 
-![sling bag loadout when in transit](./images/airport-edc.webp)
 ![camera bag loadout when in transit](./images/camera-transit.webp)
 
 </div>
@@ -47,6 +46,12 @@ The rolling-carry on luggage has one side packed with my empty duffel, and the o
 While I'm in transit, going through airports and train stations, I figured I can keep my camera gear packed away. Everything else that I want quick access to can fit in my sling, which I can optionally wear or throw it into my weekender bag, which can sit on top of my rolling luggage since it has a luggage pass-through.
 
 ## Sling in-transit
+
+<div>
+
+![sling bag loadout when in transit](./images/airport-edc.webp)
+
+</div>
 
 Everything packed out here is stuff that I want on me when I'm on the plane, and at the airport. I have soooooo many slings, and I really enjoy using all of them but I finally decided on going with the [Tomtoc Aviator-T33 Chest Bag 3.5L](https://www.tomtoc.com/products/aviator-t33-chest-bag?variant=45092308156646). The size is just right for everything I want to carry, and it's really comfortable.
 
@@ -82,7 +87,7 @@ The pouch is just a [desk pouch from Bellroy](https://www.amazon.com/gp/product/
 
 ## Japan EDC
 
-<div style="display: grid; grid-template-columns: 1fr; gap: 1rem;">
+<div>
 
 ![](./images/cover-alt.webp)
 
