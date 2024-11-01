@@ -2,9 +2,9 @@
 title: "Packing for Japan 2024"
 description: "something something edc blah blah blah"
 pubDate: "Oct 31 2024"
-cover: "./images/cover-alt.webp"
+cover: "/public/images/blog-placeholder-2.jpg"
 coverAlt: "My packing list for Japan in 2024"
-tags: [Japan, Featured]
+tags: [Japan]
 ---
 
 Going to Japan, again!
