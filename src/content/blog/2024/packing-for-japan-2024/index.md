@@ -2,7 +2,7 @@
 title: "Packing for Japan 2024"
 description: "something something edc blah blah blah"
 pubDate: "Oct 31 2024"
-cover: "./images/cover-alt.png"
+cover: "./images/cover-alt.webp"
 coverAlt: "My packing list for Japan in 2024"
 tags: [Japan, Featured]
 ---
@@ -21,8 +21,8 @@ With the bottom packed out, the main upper compartment can carry my sling and a 
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
 
-![](./images/cpap.png)
-![](./images/handbag1.png)
+![](./images/cpap.webp)
+![](./images/handbag1.webp)
 
 </div>
 
@@ -30,8 +30,8 @@ The rolling-carry on luggage has one side packed with my empty duffel, and the o
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
 
-![](./images/roller-luggage-open.png)
-![](./images/roller-luggage-and-handbag.png)
+![](./images/roller-luggage-open.webp)
+![](./images/roller-luggage-and-handbag.webp)
 
 </div>
 
@@ -39,8 +39,8 @@ The rolling-carry on luggage has one side packed with my empty duffel, and the o
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
 
-![sling bag loadout when in transit](./images/airport-edc.png)
-![camera bag loadout when in transit](./images/camera-transit.png)
+![sling bag loadout when in transit](./images/airport-edc.webp)
+![camera bag loadout when in transit](./images/camera-transit.webp)
 
 </div>
 
@@ -84,7 +84,7 @@ The pouch is just a [desk pouch from Bellroy](https://www.amazon.com/gp/product/
 
 <div style="display: grid; grid-template-columns: 1fr; gap: 1rem;">
 
-![](./images/cover-alt.png)
+![](./images/cover-alt.webp)
 
 </div>
 
