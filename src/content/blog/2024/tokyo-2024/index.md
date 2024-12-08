@@ -1,9 +1,9 @@
 ---
 title: "Tokyo 2024"
-description: "street photography + onsens"
+description: "street photography"
 pubDate: "Dec 7 2024"
 cover: "./images/ueno-zzz.webp"
-coverAlt: "placeholder image"
+coverAlt: "man walking through ueno"
 tags: [Japan, Fuji X100V, Featured]
 ---
 
