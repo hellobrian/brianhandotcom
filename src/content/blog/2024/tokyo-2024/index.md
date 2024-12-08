@@ -37,7 +37,6 @@ tags: [Japan, Fuji X100V, Featured]
 ![alt text](./images/tokyo-national-art-center-2.webp)
 ![alt text](./images/tokyo-national-art-center-3.webp)
 ![alt text](./images/tokyo-national-art-center-4.webp)
-![alt text](./images/tokyo-national-art-center-5.webp)
 
 ### Misc
 
