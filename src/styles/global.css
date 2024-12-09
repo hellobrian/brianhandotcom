@@ -207,7 +207,7 @@ hr {
   text-align: center;
 }
 
-@media screen and (width < 720px) {
+@media screen and (width < 900px) {
   .prose {
     grid-template-columns: 1fr;
     padding: 0;
