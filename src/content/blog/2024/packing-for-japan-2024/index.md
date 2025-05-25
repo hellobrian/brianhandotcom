@@ -89,7 +89,7 @@ The pouch is just a [desk pouch from Bellroy](https://www.amazon.com/gp/product/
 
 <div>
 
-![](./images/cover-alt.webp)
+![](/images/blog/2024/packing-for-japan-2024/cover-alt.webp)
 
 </div>
 

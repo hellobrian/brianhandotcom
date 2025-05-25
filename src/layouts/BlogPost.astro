@@ -1,55 +1,75 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
-import { Image } from "astro:assets";
-type Props = CollectionEntry<"blog">["data"];
+
+type Variant = "base" | "blog";
+type Props = CollectionEntry<"blog">["data"] & { variant?: Variant };
+
 import BaseLayout from "./BaseLayout.astro";
 import Tags from "../components/Tags.astro";
 
 const { title, description, pubDate, updatedDate, cover, coverAlt, tags } =
   Astro.props;
+
+const variant: Variant = Astro.props.variant ?? "blog";
 ---
 
-<BaseLayout title={title} description={description}>
-  <main>
-    <article>
-      <div class="hero-image">
-        {
-          cover && (
-            <Image
-              width={1920}
-              height={1080}
-              src={cover}
-              alt={`${coverAlt}`}
-              quality={"max"}
-            />
-          )
-        }
-      </div>
-      <div class="prose">
-        <div class="title">
-          <div class="date">
-            <FormattedDate date={pubDate} />
-            {
-              updatedDate && (
-                <div class="last-updated-on">
-                  Last updated on <FormattedDate date={updatedDate} />
-                </div>
-              )
-            }
+{
+  variant === "base" && (
+    <BaseLayout title={title} description={description}>
+      <main>
+        <article>
+          <div class="prose">
+            <div class="title">
+              <div class="date">
+                <FormattedDate date={pubDate} />
+                {updatedDate && (
+                  <div class="last-updated-on">
+                    Last updated on <FormattedDate date={updatedDate} />
+                  </div>
+                )}
+              </div>
+              <h1>{title}</h1>
+            </div>
+            <hr />
+            <slot />
+            <hr />
+            <Tags tags={tags} />
           </div>
-          <h1>
-            {title}
-          </h1>
-        </div>
-        <hr />
-        <slot />
-        <hr />
-        <Tags tags={tags} />
-      </div>
-    </article>
-  </main>
-</BaseLayout>
+        </article>
+      </main>
+    </BaseLayout>
+  )
+}
+
+{
+  variant === "blog" && (
+    <BaseLayout title={title} description={description}>
+      <main>
+        <article>
+          <div class="prose">
+            <div class="title">
+              <div class="date">
+                <FormattedDate date={pubDate} />
+                {updatedDate && (
+                  <div class="last-updated-on">
+                    Last updated on <FormattedDate date={updatedDate} />
+                  </div>
+                )}
+              </div>
+              <h1>{title}</h1>
+            </div>
+            <hr />
+            <slot />
+            <hr />
+            <Tags tags={tags} />
+          </div>
+        </article>
+      </main>
+    </BaseLayout>
+  )
+}
+
 <style>
   .hero-image {
     display: flex;
