@@ -2,7 +2,7 @@
 title: "Tiger 80 Lite + Olivia"
 description: "I don't have enough pink boards for Olivia"
 pubDate: "Mar 29 2024"
-cover: "./images/cover.png"
+cover: "/public/images/blog/2024/keebs-tiger80lite-olivia/cover.png"
 coverAlt: "A Tiger 80 Lite keyboard with Cherry Olivia APL keycaps"
 tags: [Keyboards, Tiger 80 Lite, Olivia, Canon 5D Mark II, Featured]
 ---
@@ -33,7 +33,7 @@ I'm learning more about how to setup my cameras with better auto settings:
 - **Aperture set between f4 and f/8**: I used to focus stack in post, but I don't wanna do that anymore 😅 so, a larger depth of field is preferable to see more of the keyboard in focus.
 - **ISO 100**: set this to lowest ISO setting to reduce noise and made 1 stop adjustments with exposure compensation.
 
-![alt text](./images/harsh-light-and-angle.png)
-![alt text](./images/front-angle.png)
-![alt text](./images/left.png)
-![alt text](./images/usb-port.png)
+![alt text](/images/blog/2024/keebs-tiger80lite-olivia/harsh-light-and-angle.png)
+![alt text](/images/blog/2024/keebs-tiger80lite-olivia/front-angle.png)
+![alt text](/images/blog/2024/keebs-tiger80lite-olivia/left.png)
+![alt text](/images/blog/2024/keebs-tiger80lite-olivia/usb-port.png)

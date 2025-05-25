@@ -1,0 +1,11 @@
+---
+import SlideshowComponent from "./Slideshow";
+
+type Props = {
+  images: string[];
+};
+
+const { images } = Astro.props as Props;
+---
+
+<SlideshowComponent client:load images={images} />
