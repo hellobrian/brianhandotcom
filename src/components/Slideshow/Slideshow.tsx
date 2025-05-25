@@ -2,11 +2,10 @@ import React from "react";
 import "./Slideshow.css";
 
 type SlideshowProps = {
-  columns?: number;
   images: string[];
 };
 
-const SlideshowComponent = ({ columns = 2, images }: SlideshowProps) => {
+const SlideshowComponent = ({ images }: SlideshowProps) => {
   const [currentImage, setCurrentImage] = React.useState(images[0]);
 
   return (
@@ -25,10 +24,7 @@ const SlideshowComponent = ({ columns = 2, images }: SlideshowProps) => {
             </svg>
           </a>
         </div>
-        <div
-          className="slideshow-thumbnails"
-          style={{ ["--columns" as any]: columns }}
-        >
+        <div className="slideshow-thumbnails">
           {images.map((src, index) => {
             return (
               <img

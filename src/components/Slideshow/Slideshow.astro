@@ -2,11 +2,10 @@
 import SlideshowComponent from "./Slideshow";
 
 type Props = {
-  columns?: number;
   images: string[];
 };
 
-const { columns = 3, images } = Astro.props as Props;
+const { images } = Astro.props as Props;
 ---
 
-<SlideshowComponent client:load columns={columns} images={images} />
+<SlideshowComponent client:load images={images} />

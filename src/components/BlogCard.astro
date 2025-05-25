@@ -79,6 +79,7 @@ const { slug, title, pubDate, cover, coverAlt, loading } = Astro.props;
   }
   a:hover img {
     box-shadow: var(--box-shadow);
+    transition: box-shadow 200ms ease-in-out;
   }
 
   @media (width < 720px) {

@@ -51,7 +51,6 @@
 }
 
 .slideshow-thumbnails {
-  /* columns: var(--columns); */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 15ch), 1fr));
   gap: 1rem;
@@ -60,7 +59,7 @@
 
 .slideshow-thumbnails img {
   object-fit: cover;
-  block-size: 50px;
+  block-size: 120px;
   inline-size: 100%;
 }
 

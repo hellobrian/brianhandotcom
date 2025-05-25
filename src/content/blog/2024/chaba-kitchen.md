@@ -4,7 +4,7 @@ description: "Food trucks in north Austin"
 pubDate: "Mar 26 2024"
 cover: "/public/images/blog/2024/chaba-kitchen/banner.png"
 coverAlt: "A banner for Chaba Kitchen"
-tags: [Ricoh GRIIIx]
+tags: [Ricoh GRIIIx, Austin]
 ---
 
 ![](/images/blog/2024/chaba-kitchen/chaba-kitchen-diagonal.png)
