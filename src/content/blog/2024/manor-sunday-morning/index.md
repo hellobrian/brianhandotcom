@@ -2,7 +2,7 @@
 title: "Manor Sunday Morning"
 description: "Tacos, and dudes on bikes"
 pubDate: "April 14 2024"
-cover: "./images/van-dude-wide-bw.png"
+cover: "/public/images/blog/2024/manor-sunday-morning/van-dude-wide-bw.png"
 coverAlt: "A woman making tacos behind a glass window"
 tags: [Fuji X100V, Featured]
 ---
@@ -13,9 +13,9 @@ For me, the tough part with wanting to use both of these film recipes is taking 
 
 ## El Chilito on Manor
 
-![](./images/el-chilito-sign-couple.png)
-![](./images/cover.png)
-![](./images/el-chilito-couple.png)
+![](/images/blog/2024/manor-sunday-morning/el-chilito-sign-couple.png)
+![](/images/blog/2024/manor-sunday-morning/cover.png)
+![](/images/blog/2024/manor-sunday-morning/el-chilito-couple.png)
 
 ---
 
@@ -25,16 +25,16 @@ I was surprised to get photos of dudes riding their bikes that weren't terrible!
 
 Also, I'm pretty sure one of these guys is headed to the kite festival. Can you guess who?
 
-![](./images/dude-bike-3.png)
-![](./images/van-dude.png)
-![](./images/dude-bike-2.png)
+![](/images/blog/2024/manor-sunday-morning/dude-bike-3.png)
+![](/images/blog/2024/manor-sunday-morning/van-dude.png)
+![](/images/blog/2024/manor-sunday-morning/dude-bike-2.png)
 
 ---
 
 ## More from Manor
 
-![](./images/graffiti.png)
-![](./images/kwik.png)
-![](./images/planet-k-1.png)
-![](./images/haymaker.png)
-![](./images/howdy-truck.png)
+![](/images/blog/2024/manor-sunday-morning/graffiti.png)
+![](/images/blog/2024/manor-sunday-morning/kwik.png)
+![](/images/blog/2024/manor-sunday-morning/planet-k-1.png)
+![](/images/blog/2024/manor-sunday-morning/haymaker.png)
+![](/images/blog/2024/manor-sunday-morning/howdy-truck.png)

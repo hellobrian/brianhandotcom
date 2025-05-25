@@ -2,7 +2,7 @@
 title: "Super Taco Bros"
 description: "Don't tell Nintendo"
 pubDate: "April 7 2024"
-cover: "./images/cover-sign.png"
+cover: "/public/images/blog/2024/super taco bros/cover-sign.png"
 coverAlt: "3 tacos on a wooden picnic table"
 tags: [Fuji X100V]
 ---
@@ -11,9 +11,9 @@ tags: [Fuji X100V]
 
 Driving up, you may or may not notice there's a sprinkle of Mario inspired branding here - just enough to be recognizable, but hopefully not enough to get on Nintendo's radar.
 
-![a mustached taco bro slinging tacos](./images/mascot.png)
-![open sign on a covered food truck](./images/open-sign.png)
-![a yellow food truck](./images/truck-diagonal.png)
+![a mustached taco bro slinging tacos](/images/blog/2024/super%20taco%20bros/mascot.png)
+![open sign on a covered food truck](/images/blog/2024/super%20taco%20bros/open-sign.png)
+![a yellow food truck](/images/blog/2024/super%20taco%20bros/truck-diagonal.png)
 
 ---
 
@@ -25,11 +25,11 @@ Since it's so close to home, I'm definitely going back for more.
 
 ---
 
-![three tacos on a wooden picnic table](./images/three-tacos.png)
-![a close look at the inside of a chorizo taco with onions, cilantro and salso](./images/cover-closeup.png)
-![two tacos on corn toritllas](./images/birria-and-tripa-on-corn.png)
-![a tripas taco](./images/tripa.png)
-![a hand holding a birria taco](./images/tripas-handheld-2.png)
+![three tacos on a wooden picnic table](/images/blog/2024/super%20taco%20bros/three-tacos.png)
+![a close look at the inside of a chorizo taco with onions, cilantro and salso](/images/blog/2024/super%20taco%20bros/cover-closeup.png)
+![two tacos on corn toritllas](/images/blog/2024/super%20taco%20bros/birria-and-tripa-on-corn.png)
+![a tripas taco](/images/blog/2024/super%20taco%20bros/tripa.png)
+![a hand holding a birria taco](/images/blog/2024/super%20taco%20bros/tripas-handheld-2.png)
 
 ---
 

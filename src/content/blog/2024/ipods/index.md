@@ -2,7 +2,7 @@
 title: "iPods: Kindles for Music"
 description: "Party like it's 2004"
 pubDate: "Mar 16 2024"
-cover: "./images/ipod-crop.png"
+cover: "/public/images/blog/2024/ipods/ipod-crop.png"
 coverAlt: "A custom iPod Classic with black clickwheel and blue aluminum shell"
 tags: []
 ---
@@ -17,4 +17,4 @@ I started using iPods again. Here's what makes them work for me in 2024:
 
 - **Headphone jack**: Wired headphones! means less dependencies on things failing like bluetooth, battery, or losing your left airpod.
 
-![holding a custom iPod Classic with black clickwheel and blue aluminum shell](./images/ipod-hand.png)
+![holding a custom iPod Classic with black clickwheel and blue aluminum shell](/images/blog/2024/ipods/ipod-hand.png)

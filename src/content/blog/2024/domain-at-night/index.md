@@ -2,7 +2,7 @@
 title: "Domain at Night"
 description: "First photo walk with the Fuji X100V"
 pubDate: "Mar 20 2024"
-cover: "./images/mercedes.png"
+cover: "/public/images/blog/2024/domain-at-night/mercedes.png"
 coverAlt: "A man with red shorts walks into a Nordstrom at night"
 tags: [Featured, Fuji X100V]
 ---
@@ -14,18 +14,18 @@ Put my camera in aperture priority mode, and film simulation bracketing mode. Th
 
 All photos are _mostly_ straight out of camera - I cropped in on a few photos, and that's it!
 
-![Neon sign for Bakery Lorraine](./images/bakery.png)
-![A family walking by an Apple Store](./images/bw-apple-store-fam.png)
-![Three guys in line for ice cream](./images/three-bald-guys-getting-ice-cream.png)
-![The storefront for Jeni's ice cream](./images/bw-jenis.png)
-![A couple walking by a club in the Domain](./images/he-listens.png)
-![A black mercedes parked under some street lights](./images/mercedes.png)
-![A close up of the Nordstrom building](./images/nordstrom-lines.png)
-![A guy in red shorts walks by Nordstrom](./images/nordstrom.png)
-![A parking garage stairwell at night](./images/stairwell.png)
-![A woman walks by Houndstooth Coffee](./images/houndstooth.png)
-![A couple walks by Wonder Bar](./images/wonderbar.png)
-![A full restaurant](./images/A-triple-asteriks.png)
-![A group of friends walking down a street](./images/four-buds-outside-rh.png)
-![Two girls standing outside of a bar](./images/leaving-kung-fu-bar.png)
-![two people sitting the same in different shops](./images/sitting-the-same.png)
+![Neon sign for Bakery Lorraine](/images/blog/2024/domain-at-night/bakery.png)
+![A family walking by an Apple Store](/images/blog/2024/domain-at-night/bw-apple-store-fam.png)
+![Three guys in line for ice cream](/images/blog/2024/domain-at-night/three-bald-guys-getting-ice-cream.png)
+![The storefront for Jeni's ice cream](/images/blog/2024/domain-at-night/bw-jenis.png)
+![A couple walking by a club in the Domain](/images/blog/2024/domain-at-night/he-listens.png)
+![A black mercedes parked under some street lights](/images/blog/2024/domain-at-night/mercedes.png)
+![A close up of the Nordstrom building](/images/blog/2024/domain-at-night/nordstrom-lines.png)
+![A guy in red shorts walks by Nordstrom](/images/blog/2024/domain-at-night/nordstrom.png)
+![A parking garage stairwell at night](/images/blog/2024/domain-at-night/stairwell.png)
+![A woman walks by Houndstooth Coffee](/images/blog/2024/domain-at-night/houndstooth.png)
+![A couple walks by Wonder Bar](/images/blog/2024/domain-at-night/wonderbar.png)
+![A full restaurant](/images/blog/2024/domain-at-night/A-triple-asteriks.png)
+![A group of friends walking down a street](/images/blog/2024/domain-at-night/four-buds-outside-rh.png)
+![Two girls standing outside of a bar](/images/blog/2024/domain-at-night/leaving-kung-fu-bar.png)
+![two people sitting the same in different shops](/images/blog/2024/domain-at-night/sitting-the-same.png)

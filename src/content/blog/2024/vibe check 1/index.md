@@ -2,7 +2,7 @@
 title: "Vibe Check 001"
 description: "This is a semi-regular check-in to see whats up with me"
 pubDate: "April 8 2024"
-cover: "./images/manhattan-beach-smokestacks.png"
+cover: "/public/images/blog/2024/vibe check 1/manhattan-beach-smokestacks.png"
 coverAlt: "Manhattan Beach Smokestacks in California"
 tags: [Canon 5D Mark II, Vibe Check]
 isPublished: false
@@ -20,18 +20,18 @@ I came across a bunch of old photos from ten years ago. I was more active with p
 
 Voluptate fugiat laborum aliqua enim culpa elit et ut adipisicing consequat. Commodo laboris id cillum consectetur adipisicing voluptate. Id veniam deserunt anim velit.
 
-![sxsw-2012](./images/sxsw-2012.png)
-![dirty-sixth-street](./images/dirty-sixth-street.png)
+![sxsw-2012](/images/blog/2024/vibe%20check%201/sxsw-2012.png)
+![dirty-sixth-street](/images/blog/2024/vibe%20check%201/dirty-sixth-street.png)
 
 ### Austin Food
 
-![falafel-wrap-from-kebabilicious](./images/falafel-wrap-from-kebabilicious.png)
-![tacos-from-torchys](./images/tacos-from-torchys.png)
+![falafel-wrap-from-kebabilicious](/images/blog/2024/vibe%20check%201/falafel-wrap-from-kebabilicious.png)
+![tacos-from-torchys](/images/blog/2024/vibe%20check%201/tacos-from-torchys.png)
 
 ### California
 
-![dad-in-california](./images/dad-in-california.png)
-![manhattan-beach-smokestacks](./images/manhattan-beach-smokestacks.png)
+![dad-in-california](/images/blog/2024/vibe%20check%201/dad-in-california.png)
+![manhattan-beach-smokestacks](/images/blog/2024/vibe%20check%201/manhattan-beach-smokestacks.png)
 
 ### Halt and Catch Fire
 
