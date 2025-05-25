@@ -28,10 +28,9 @@ const { slug, title, pubDate, cover, coverAlt, loading } = Astro.props;
       height={720}
       src={cover}
       alt={`${coverAlt}`}
-      transition:name={`cover-image-${title}`}
       quality="high"
     />
-    <h4 class="title" transition:name={`blog-title-${title}`}>
+    <h4 class="title">
       {title}
     </h4>
     <p class="date">
@@ -46,7 +45,6 @@ const { slug, title, pubDate, cover, coverAlt, loading } = Astro.props;
   }
   li * {
     text-decoration: none;
-    transition: 0.2s ease;
   }
   li:first-child {
     width: 100%;

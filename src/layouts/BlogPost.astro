@@ -21,7 +21,6 @@ const { title, description, pubDate, updatedDate, cover, coverAlt, tags } =
               height={1080}
               src={cover}
               alt={`${coverAlt}`}
-              transition:name={`cover-image-${title}`}
               quality={"max"}
             />
           )
@@ -30,10 +29,7 @@ const { title, description, pubDate, updatedDate, cover, coverAlt, tags } =
       <div class="prose">
         <div class="title">
           <div class="date">
-            <FormattedDate
-              date={pubDate}
-              transition:name={`blog-pub-date-${pubDate}`}
-            />
+            <FormattedDate date={pubDate} />
             {
               updatedDate && (
                 <div class="last-updated-on">
@@ -42,7 +38,7 @@ const { title, description, pubDate, updatedDate, cover, coverAlt, tags } =
               )
             }
           </div>
-          <h1 transition:name={`blog-title-${title}`}>
+          <h1>
             {title}
           </h1>
         </div>
