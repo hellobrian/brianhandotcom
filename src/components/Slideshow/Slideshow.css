@@ -26,16 +26,25 @@
   display: grid;
   grid-template-columns: 1fr 48px;
   grid-template-rows: 1fr 48px;
-  max-block-size: 1080px;
-  max-inline-size: 720px;
+  block-size: 720px;
+  inline-size: 720px;
   overflow: hidden;
+}
+
+@media screen and (width < 768px) {
+  .slideshow-highlight {
+    inline-size: 320px;
+    block-size: 320px;
+    overflow: hidden;
+  }
 }
 
 .slideshow-highlight img {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   object-fit: cover;
-  transition: all 200ms;
+  block-size: 100%;
+  inline-size: 100%;
 }
 
 .slideshow-highlight a {
@@ -63,7 +72,7 @@
   inline-size: 100%;
 }
 
-@media screen and (width < 480px) {
+@media screen and (width < 768px) {
   .slideshow-thumbnails {
     grid-template-columns: repeat(auto-fit, 48px);
   }
