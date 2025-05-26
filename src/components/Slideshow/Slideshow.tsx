@@ -1,40 +1,75 @@
 import React from "react";
 import "./Slideshow.css";
-import SlideshowDialog from "./SlideshowDialog";
 
 type SlideshowProps = {
   images: string[];
+  initialFullView?: boolean;
 };
 
-const SlideshowComponent = ({ images }: SlideshowProps) => {
+const currentThumbnailStyle = {
+  opacity: 1,
+  outline: "4px solid var(--accent-light)",
+  boxShadow: "var(--box-shadow)",
+};
+
+const thumbnailStyle = {
+  opacity: 0.5,
+};
+
+const SlideshowComponent = ({
+  images,
+  initialFullView = false,
+}: SlideshowProps) => {
   const [currentImage, setCurrentImage] = React.useState(images[0]);
+  const [isFullView, setFullView] = React.useState(initialFullView);
+
+  const toggleFullView = () => {
+    if (window.innerWidth <= 480) return;
+    setFullView(!isFullView);
+  };
 
   return (
     <>
       <div className="slideshow-container">
-        <div className="slideshow-content">
-          <div className="slideshow-highlight">
-            <img src={currentImage} alt="Slideshow image" />
-            {/* <SlideshowDialog image={currentImage} /> */}
-          </div>
-          <div className="slideshow-thumbnails">
-            {images.map((src, index) => {
-              return (
-                <img
-                  onClick={() => {
-                    if (src === currentImage) return;
-                    setCurrentImage(src);
-                  }}
-                  src={src}
-                  key={index}
-                  alt={`Slideshow thumbnail ${index + 1}`}
-                  style={
-                    src === currentImage ? { opacity: 1 } : { opacity: 0.5 }
-                  }
-                />
-              );
-            })}
-          </div>
+        <div
+          className="slideshow-highlight"
+          role="group"
+          tabIndex={0}
+          onClick={toggleFullView}
+          style={{
+            // Add any additional custom styles here
+            ...({
+              "--maxBlockSize": isFullView ? "100%" : "600px",
+            } as React.CSSProperties),
+          }}
+        >
+          <img
+            src={currentImage}
+            alt="Slideshow image"
+            style={{ cursor: isFullView ? "zoom-out" : "zoom-in" }}
+          />
+        </div>
+        <div className="slideshow-thumbnails" role="group">
+          {images.map((src, index) => {
+            return (
+              <img
+                tabIndex={0}
+                onClick={() => {
+                  if (src === currentImage) return;
+                  setCurrentImage(src);
+                  // setFullView(false);
+                }}
+                src={src}
+                key={index}
+                alt={`Slideshow thumbnail ${index + 1}`}
+                style={{
+                  ...(src === currentImage
+                    ? currentThumbnailStyle
+                    : thumbnailStyle),
+                }}
+              />
+            );
+          })}
         </div>
       </div>
     </>
