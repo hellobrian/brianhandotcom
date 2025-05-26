@@ -10,7 +10,7 @@ const { images, initialFullView = false } = Astro.props as Props;
 ---
 
 <SlideshowComponent
-  client:load
+  client:visible
   images={images}
   initialFullView={initialFullView}
 />
