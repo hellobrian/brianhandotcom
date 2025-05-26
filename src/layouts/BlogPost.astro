@@ -62,7 +62,7 @@ const variant: Variant = Astro.props.variant ?? "blog";
             <hr />
             <slot />
             <hr />
-            <Tags tags={tags} />
+            {tags.length > 0 && <Tags tags={tags} />}
           </div>
         </article>
       </main>

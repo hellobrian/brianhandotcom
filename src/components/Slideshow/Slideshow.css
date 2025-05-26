@@ -1,6 +1,6 @@
 .slideshow-container {
   display: grid;
-  grid-template-columns: 1fr 144px;
+  grid-template-columns: 1fr var(--thumbnailColumnSize);
   grid-column: 2 / span 3;
   gap: 1rem;
   inline-size: 100%;

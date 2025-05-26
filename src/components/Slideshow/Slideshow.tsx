@@ -30,7 +30,15 @@ const SlideshowComponent = ({
 
   return (
     <>
-      <div className="slideshow-container">
+      <div
+        className="slideshow-container"
+        style={{
+          // Add any additional custom styles here
+          ...({
+            "--thumbnailColumnSize": images.length > 8 ? "144px" : "48px",
+          } as React.CSSProperties),
+        }}
+      >
         <div
           className="slideshow-highlight"
           role="group"
