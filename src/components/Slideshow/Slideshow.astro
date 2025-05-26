@@ -3,9 +3,14 @@ import SlideshowComponent from "./Slideshow";
 
 type Props = {
   images: string[];
+  initialFullView?: boolean;
 };
 
-const { images } = Astro.props as Props;
+const { images, initialFullView = false } = Astro.props as Props;
 ---
 
-<SlideshowComponent client:load images={images} />
+<SlideshowComponent
+  client:load
+  images={images}
+  initialFullView={initialFullView}
+/>

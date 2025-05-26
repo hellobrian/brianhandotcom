@@ -1,89 +1,53 @@
 .slideshow-container {
   display: grid;
+  grid-template-columns: 1fr 144px;
   grid-column: 2 / span 3;
   gap: 1rem;
-  max-inline-size: 1280px;
-}
-
-@media screen and (width < 900px) {
-  .slideshow-container {
-    grid-column: 1 / span 1;
-    padding: 0;
-  }
-}
-
-.slideshow-content {
-  display: contents;
-}
-
-.slideshow-highlight,
-.slideshow-thumbnails {
-  grid-column: 1 / span 1;
-  padding: 0;
+  inline-size: 100%;
 }
 
 .slideshow-highlight {
-  display: grid;
-  grid-template-columns: 1fr 48px;
-  grid-template-rows: 1fr 48px;
-  block-size: 720px;
-  inline-size: 720px;
   overflow: hidden;
-}
-
-@media screen and (width < 768px) {
-  .slideshow-highlight {
-    inline-size: 320px;
-    block-size: 320px;
-    overflow: hidden;
-  }
+  max-block-size: var(--maxBlockSize);
+  transition: max-block-size 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .slideshow-highlight img {
-  grid-column: 1 / -1;
   grid-row: 1 / -1;
   object-fit: cover;
   block-size: 100%;
   inline-size: 100%;
 }
 
-.slideshow-highlight a {
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
-  background: white;
-  padding: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  margin: 4px;
-}
-
 .slideshow-thumbnails {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15ch), 1fr));
   gap: 1rem;
   inline-size: 100%;
+  grid-column: 2 / span 1;
+  grid-template-columns: repeat(auto-fit, 48px);
+  grid-template-rows: repeat(auto-fit, 48px);
+  align-content: center;
+  justify-content: center;
 }
 
 .slideshow-thumbnails img {
   object-fit: cover;
-  block-size: 120px;
-  inline-size: 100%;
-}
-
-@media screen and (width < 768px) {
-  .slideshow-thumbnails {
-    grid-template-columns: repeat(auto-fit, 48px);
-  }
-
-  .slideshow-thumbnails img {
-    object-fit: cover;
-    block-size: 48px;
-    inline-size: 48px;
-  }
+  block-size: 48px;
+  inline-size: 48px;
 }
 
 .slideshow-thumbnails img {
   cursor: pointer;
+}
+
+@media screen and (width < 900px) {
+  .slideshow-container {
+    grid-template-columns: 1fr;
+    grid-column: 1 / -1;
+    padding: 0;
+  }
+
+  .slideshow-thumbnails {
+    grid-column: 1 / -1;
+  }
 }

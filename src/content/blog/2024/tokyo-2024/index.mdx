@@ -8,14 +8,16 @@ tags: [Japan, Fuji X100V, Featured]
 ---
 
 import Slideshow from "../../../../components/Slideshow/Slideshow.astro";
-import DuoHeroImages from "./DuoHeroImages.astro";
 
 ## Kanazawa
 
-<DuoHeroImages>
-  ![alt text](/images/blog/2024/tokyo-2024/kanazawa-stop-light.webp) ![alt
-  text](/images/blog/2024/tokyo-2024/kanazawa-shrine-couple.webp)
-</DuoHeroImages>
+<Slideshow
+  is:client
+  images={[
+    "/images/blog/2024/tokyo-2024/kanazawa-stop-light.webp",
+    "/images/blog/2024/tokyo-2024/kanazawa-shrine-couple.webp",
+  ]}
+/>
 
 ## Tokyo - Ginza
 
