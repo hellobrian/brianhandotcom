@@ -15,7 +15,7 @@ const SlideshowComponent = ({ images }: SlideshowProps) => {
         <div className="slideshow-content">
           <div className="slideshow-highlight">
             <img src={currentImage} alt="Slideshow image" />
-            <SlideshowDialog image={currentImage} />
+            {/* <SlideshowDialog image={currentImage} /> */}
           </div>
           <div className="slideshow-thumbnails">
             {images.map((src, index) => {
