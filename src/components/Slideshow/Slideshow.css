@@ -4,6 +4,7 @@
   grid-column: 2 / span 3;
   gap: 1rem;
   inline-size: 100%;
+  max-inline-size: 1280px;
 }
 
 .slideshow-highlight {
