@@ -1,0 +1,100 @@
+---
+title: "Weeknotes 1"
+description: "This is a semi-regular check-in to see whats up with me"
+pubDate: "May 26 2025"
+cover: "/public/images/blog/2024/vibe check 1/manhattan-beach-smokestacks.png"
+coverAlt: "Manhattan Beach Smokestacks in California"
+tags: [Canon 5D Mark II, Weeknotes]
+isPublished: true
+---
+
+import Slideshow from "../../../components/Slideshow/Slideshow.astro";
+
+## This website
+
+It's becoming more important for me to have this website to document my life:
+
+- things I'm doing
+- things I'm thinking about
+- things I'm interested in
+
+I'm appreciating looking back more and it's been nice to have a spot on the internet that I can mostly control and curate that content.
+
+- Website built with [Astro](https://astro.build/)
+- Blog posts written in [MDX](https://mdxjs.com/) and Markdown files
+- Photos hosted locally in the `/public` directory for now - I should eventually offload them to a CDN or something like [Cloudinary](https://cloudinary.com/)
+
+I've been kicking the can on this website for a while now.
+
+Any coding has felt very work-centric lately and I'm finally feeling more in the mood to dabble with non-work projects like this website. The idea of tweaking things here and there doesn't burn me out anymore. It used to.
+
+In the past, I felt like my website needed to be about my career as a developer.
+
+Now, I want it to be about me as a person. Sure, I can still share developer-related things, but I also want to share more about my life outside of work so that I can look back on it later and remember how life was going at that time I decided to post.
+
+I don't know how often I'll post, but I want to try to do it more often - I've especially enjoyed looking back at my old photos from last year. My camera roll and Apple Photos is a huge photo dump, but here it's all curated to whatever I felt like was interesting enough to share. I don't have to think about how many likes I'm going to get because there's no like button. I like that.
+
+And a special shoutout to personal websites I've followed casually:
+
+- Vibe Checks from [Dave Rupert](https://daverupert.com/2024/03/vibe-check-31/)
+- Weeknotes from [Anh](https://anhvn.com/posts/2024/weeknotes-12/)
+
+I waffled on whether to call this a "vibe check" or "weeknotes". As you can tell, I settled on "weeknotes" to be a little aspirational - maybe I will update weekly, maybe not.
+
+## Ten years ago
+
+I came across a bunch of old photos from ten years ago. I was more active with photography and videography during this time. These are some of my favorites that I enjoyed looking at most.
+
+<Slideshow
+  is:client
+  initialFullView
+  images={[
+    "/images/blog/2024/vibe check 1/sxsw-2012.png",
+    "/images/blog/2024/vibe check 1/dirty-sixth-street.png",
+    "/images/blog/2024/vibe check 1/falafel-wrap-from-kebabilicious.png",
+    "/images/blog/2024/vibe check 1/tacos-from-torchys.png",
+    "/images/blog/2024/vibe check 1/dad-in-california.png",
+    "/images/blog/2024/vibe check 1/manhattan-beach-smokestacks.png",
+  ]}
+/>
+
+Back then I shot with a Canon 5D Mark II and a 50mm f/1.8 lens. I was - well, actually - I'm still learning how to use my camera, but I was having fun with it and still am! The Canon 5D was my first and only full-frame camera. I still have it, and I plan to keep it around since it still takes great photos.
+
+## Slideshow component
+
+The slideshow component is a custom Astro component I built to display images.
+
+<Slideshow
+  is:client
+  images={[
+    "/images/blog-placeholder-3.jpg",
+    "/images/blog-placeholder-1-vertical.jpg",
+    "/images/blog-placeholder-2.jpg",
+    "/images/blog-placeholder-4.jpg",
+    "/images/blog-placeholder-5.jpg",
+  ]}
+/>
+
+It's a React component that can be used in MDX files via Astro components.
+The name is a bit of a misnomer since it doesn't actually slide, it's currently
+built in a way that you can click through the images one by one. Clicking the image toggles between full and compact views - this is meant to view long portrait images in full view without resizeing or cropping them to fit the screen. View mode toggle only works on large screens, on smaller screens it always shows the full view.
+
+```tsx
+<Slideshow
+  is:client
+  initialFullView
+  images={[
+    "/images/blog-placeholder-3.jpg",
+    "/images/blog-placeholder-1-vertical.jpg",
+    "/images/blog-placeholder-2.jpg",
+    "/images/blog-placeholder-4.jpg",
+    "/images/blog-placeholder-5.jpg",
+  ]}
+/>
+```
+
+There are a few things left to do to improve the component:
+
+- Add "next" and "previous" buttons to navigate through the images
+
+- Pass in alt text for each image for accessibility
