@@ -55,27 +55,33 @@ const SlideshowComponent = ({
             src={currentImage}
             alt="Slideshow image"
             style={{ cursor: isFullView ? "zoom-out" : "zoom-in" }}
+            width={900}
+            height={600}
+            loading="lazy"
           />
         </div>
         <div className="slideshow-thumbnails" role="group">
           {images.map((src, index) => {
             return (
-              <img
-                tabIndex={0}
-                onClick={() => {
-                  if (src === currentImage) return;
-                  setCurrentImage(src);
-                  // setFullView(false);
-                }}
-                src={src}
-                key={index}
-                alt={`Slideshow thumbnail ${index + 1}`}
+              <span
                 style={{
                   ...(src === currentImage
                     ? currentThumbnailStyle
                     : thumbnailStyle),
                 }}
-              />
+              >
+                <img
+                  tabIndex={0}
+                  onClick={() => {
+                    if (src === currentImage) return;
+                    setCurrentImage(src);
+                    // setFullView(false);
+                  }}
+                  src={src}
+                  key={index}
+                  alt={`Slideshow thumbnail ${index + 1}`}
+                />
+              </span>
             );
           })}
         </div>
