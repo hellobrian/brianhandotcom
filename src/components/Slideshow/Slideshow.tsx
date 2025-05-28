@@ -1,8 +1,13 @@
 import React from "react";
 import "./Slideshow.css";
 
+type ImageType = {
+  src: string;
+  alt?: string;
+};
+
 type SlideshowProps = {
-  images: string[];
+  images: ImageType[];
   initialFullView?: boolean;
 };
 
@@ -52,30 +57,35 @@ const SlideshowComponent = ({
           }}
         >
           <img
-            src={currentImage}
-            alt="Slideshow image"
+            src={currentImage.src}
+            alt={currentImage.alt ?? "Slideshow image"}
             style={{ cursor: isFullView ? "zoom-out" : "zoom-in" }}
+            width={900}
+            height={600}
+            loading="lazy"
           />
         </div>
         <div className="slideshow-thumbnails" role="group">
-          {images.map((src, index) => {
+          {images.map((img, index) => {
             return (
-              <img
-                tabIndex={0}
-                onClick={() => {
-                  if (src === currentImage) return;
-                  setCurrentImage(src);
-                  // setFullView(false);
-                }}
-                src={src}
-                key={index}
-                alt={`Slideshow thumbnail ${index + 1}`}
+              <span
+                key={img.src}
                 style={{
-                  ...(src === currentImage
+                  ...(img.src === currentImage.src
                     ? currentThumbnailStyle
                     : thumbnailStyle),
                 }}
-              />
+              >
+                <img
+                  tabIndex={0}
+                  onClick={() => {
+                    if (img.src === currentImage.src) return;
+                    setCurrentImage(img);
+                  }}
+                  src={img.src}
+                  alt={`Slideshow thumbnail ${index + 1}`}
+                />
+              </span>
             );
           })}
         </div>

@@ -12,10 +12,19 @@ import Slideshow from "../../../components/Slideshow/Slideshow.astro";
 <Slideshow
   is:client
   images={[
-    "/images/blog/2024/keebs-tiger80lite-olivia/harsh-light-and-angle.png",
-    "/images/blog/2024/keebs-tiger80lite-olivia/front-angle.png",
-    "/images/blog/2024/keebs-tiger80lite-olivia/left.png",
-    "/images/blog/2024/keebs-tiger80lite-olivia/usb-port.png",
+    {
+      src: "/images/blog/2024/keebs-tiger80lite-olivia/harsh-light-and-angle.png",
+      alt: "harsh-light-and-angle",
+    },
+    {
+      src: "/images/blog/2024/keebs-tiger80lite-olivia/front-angle.png",
+      alt: "front-angle",
+    },
+    { src: "/images/blog/2024/keebs-tiger80lite-olivia/left.png", alt: "left" },
+    {
+      src: "/images/blog/2024/keebs-tiger80lite-olivia/usb-port.png",
+      alt: "usb-port",
+    },
   ]}
 />
 

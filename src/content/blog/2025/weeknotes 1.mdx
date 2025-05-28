@@ -49,12 +49,27 @@ I came across a bunch of old photos from ten years ago. I was more active with p
   is:client
   initialFullView
   images={[
-    "/images/blog/2024/vibe check 1/sxsw-2012.png",
-    "/images/blog/2024/vibe check 1/dirty-sixth-street.png",
-    "/images/blog/2024/vibe check 1/falafel-wrap-from-kebabilicious.png",
-    "/images/blog/2024/vibe check 1/tacos-from-torchys.png",
-    "/images/blog/2024/vibe check 1/dad-in-california.png",
-    "/images/blog/2024/vibe check 1/manhattan-beach-smokestacks.png",
+    { src: "/images/blog/2024/vibe check 1/sxsw-2012.png", alt: "sxsw-2012" },
+    {
+      src: "/images/blog/2024/vibe check 1/dirty-sixth-street.png",
+      alt: "dirty-sixth-street",
+    },
+    {
+      src: "/images/blog/2024/vibe check 1/falafel-wrap-from-kebabilicious.png",
+      alt: "falafel-wrap-from-kebabilicious",
+    },
+    {
+      src: "/images/blog/2024/vibe check 1/tacos-from-torchys.png",
+      alt: "tacos-from-torchys",
+    },
+    {
+      src: "/images/blog/2024/vibe check 1/dad-in-california.png",
+      alt: "dad-in-california",
+    },
+    {
+      src: "/images/blog/2024/vibe check 1/manhattan-beach-smokestacks.png",
+      alt: "manhattan-beach-smokestacks",
+    },
   ]}
 />
 
@@ -67,11 +82,14 @@ The slideshow component is a custom Astro component I built to display images.
 <Slideshow
   is:client
   images={[
-    "/images/blog-placeholder-3.jpg",
-    "/images/blog-placeholder-1-vertical.jpg",
-    "/images/blog-placeholder-2.jpg",
-    "/images/blog-placeholder-4.jpg",
-    "/images/blog-placeholder-5.jpg",
+    { src: "/images/blog-placeholder-3.jpg", alt: "blog-placeholder-3" },
+    {
+      src: "/images/blog-placeholder-1-vertical.jpg",
+      alt: "blog-placeholder-1-vertical",
+    },
+    { src: "/images/blog-placeholder-2.jpg", alt: "blog-placeholder-2" },
+    { src: "/images/blog-placeholder-4.jpg", alt: "blog-placeholder-4" },
+    { src: "/images/blog-placeholder-5.jpg", alt: "blog-placeholder-5" },
   ]}
 />
 
@@ -82,19 +100,21 @@ built in a way that you can click through the images one by one. Clicking the im
 ```tsx
 <Slideshow
   is:client
-  initialFullView
   images={[
-    "/images/blog-placeholder-3.jpg",
-    "/images/blog-placeholder-1-vertical.jpg",
-    "/images/blog-placeholder-2.jpg",
-    "/images/blog-placeholder-4.jpg",
-    "/images/blog-placeholder-5.jpg",
+    { src: "/images/blog-placeholder-3.jpg", alt: "blog-placeholder-3" },
+    {
+      src: "/images/blog-placeholder-1-vertical.jpg",
+      alt: "blog-placeholder-1-vertical",
+    },
+    { src: "/images/blog-placeholder-2.jpg", alt: "blog-placeholder-2" },
+    { src: "/images/blog-placeholder-4.jpg", alt: "blog-placeholder-4" },
+    { src: "/images/blog-placeholder-5.jpg", alt: "blog-placeholder-5" },
   ]}
 />
 ```
 
 There are a few things left to do to improve the component:
 
-- Add "next" and "previous" buttons to navigate through the images
+- [ ] Add "next" and "previous" buttons to navigate through the images
 
-- Pass in alt text for each image for accessibility
+- [x] Pass in alt text for each image for accessibility
