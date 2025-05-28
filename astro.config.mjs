@@ -11,4 +11,7 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkUnwrapImages],
   },
+  redirects: {
+    '/blog/2024/tokyo-2024': '/blog/2024/japan-2024',
+  }
 });
