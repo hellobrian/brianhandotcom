@@ -22,12 +22,17 @@ const variant: Variant = Astro.props.variant ?? "blog";
           <div class="prose">
             <div class="title">
               <div class="date">
-                <FormattedDate date={pubDate} />
-                {updatedDate && (
-                  <div class="last-updated-on">
-                    Last updated on <FormattedDate date={updatedDate} />
-                  </div>
-                )}
+                <FormattedDate
+                  date={pubDate}
+                  lastUpdated={`Last updated on ${updatedDate?.toLocaleDateString(
+                    "en-us",
+                    {
+                      year: "numeric",
+                      month: "short",
+                      day: "numeric",
+                    }
+                  )}`}
+                />
               </div>
               <h1>{title}</h1>
             </div>
@@ -50,12 +55,17 @@ const variant: Variant = Astro.props.variant ?? "blog";
           <div class="prose">
             <div class="title">
               <div class="date">
-                <FormattedDate date={pubDate} />
-                {updatedDate && (
-                  <div class="last-updated-on">
-                    Last updated on <FormattedDate date={updatedDate} />
-                  </div>
-                )}
+                <FormattedDate
+                  date={pubDate}
+                  lastUpdated={`Last updated on ${updatedDate?.toLocaleDateString(
+                    "en-us",
+                    {
+                      year: "numeric",
+                      month: "short",
+                      day: "numeric",
+                    }
+                  )}`}
+                />
               </div>
               <h1>{title}</h1>
             </div>
