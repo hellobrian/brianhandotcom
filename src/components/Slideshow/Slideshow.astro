@@ -1,8 +1,13 @@
 ---
 import SlideshowComponent from "./Slideshow";
 
+type ImageType = {
+  src: string;
+  alt?: string;
+};
+
 type Props = {
-  images: string[];
+  images: ImageType[];
   initialFullView?: boolean;
 };
 
