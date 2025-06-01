@@ -2,7 +2,7 @@
 title: "Packing for Japan 2024"
 description: "something something edc blah blah blah"
 pubDate: "Oct 31 2024"
-cover: "/public/images/blog/2024/packing-for-japan-2024/cover-alt.webp"
+cover: "https://ucarecdn.com/a10ef89f-6529-473a-9982-5ede5e5bb7a6/-/preview/1000x734/"
 coverAlt: "My packing list for Japan in 2024"
 tags: [Japan]
 ---
@@ -21,8 +21,8 @@ With the bottom packed out, the main upper compartment can carry my sling and a 
 
 <div>
 
-![](/public/images/blog/2024/packing-for-japan-2024/cpap.webp)
-![](/public/images/blog/2024/packing-for-japan-2024/handbag1.webp)
+![Weekender bag with zippered bottom compartment open to reveal a CPAP machine and neatly folded clothing inside. The bag sits on a tidy bed in a softly lit room, creating an organized and calm atmosphere. No visible text in the image.](https://ucarecdn.com/8c1fc032-e575-47fd-ae2d-e0fde7962436/-/preview/750x1000/)
+![Weekender bag with the top compartment open, showing a Tomtoc sling bag and a small camera pouch neatly packed inside. The bag rests on a tidy bed in a softly lit room, creating an organized and calm atmosphere. No visible text in the image.](https://ucarecdn.com/a2dc1394-a3b1-44c9-b859-7a2a0470f21c/-/preview/750x1000/)
 
 </div>
 
@@ -30,8 +30,8 @@ The rolling-carry on luggage has one side packed with my empty duffel, and the o
 
 <div>
 
-![](/public/images/blog/2024/packing-for-japan-2024/roller-luggage-open.webp)
-![](/public/images/blog/2024/packing-for-japan-2024/roller-luggage-and-handbag.webp)
+![Open rolling suitcase on a bed, one side packed with neatly folded clothes including socks, underwear, t-shirts, pants, and a belt, the other side holding an empty duffel bag. The room appears tidy and well-lit, creating a calm and organized atmosphere. No visible text in the image.](https://ucarecdn.com/82a49f22-175d-45b0-9b7a-3d2490e34438/-/preview/750x1000/)
+![Closed black weekender bag with a zippered bottom compartment sitting on a neatly made bed in a bright, tidy room. The bag appears ready for travel, with no visible text or logos. The scene feels organized and calm, suggesting anticipation for an upcoming trip.](https://ucarecdn.com/8b22e582-014a-4c2c-abd2-9c6826bd066b/-/preview/750x1000/)
 
 </div>
 
@@ -39,7 +39,7 @@ The rolling-carry on luggage has one side packed with my empty duffel, and the o
 
 <div>
 
-![camera bag loadout when in transit](/public/images/blog/2024/packing-for-japan-2024/camera-transit.webp)
+![camera bag loadout when in transit](https://ucarecdn.com/ad383caf-eb00-4280-856f-022376eb089c/-/preview/750x1000/)
 
 </div>
 
@@ -49,7 +49,7 @@ While I'm in transit, going through airports and train stations, I figured I can
 
 <div>
 
-![sling bag loadout when in transit](/public/images/blog/2024/packing-for-japan-2024/airport-edc.webp)
+![sling bag loadout when in transit](https://ucarecdn.com/6054c941-d0ea-4ebc-bc5e-eb8a536dd25a/-/preview/750x1000/)
 
 </div>
 
@@ -89,7 +89,7 @@ The pouch is just a [desk pouch from Bellroy](https://www.amazon.com/gp/product/
 
 <div>
 
-![](/images/blog/2024/packing-for-japan-2024/cover-alt.webp)
+![Open suitcase and travel bags neatly arranged on a bed, with clothing and travel essentials organized inside. The scene is well-lit and tidy, conveying a sense of calm preparation and anticipation for travel. No visible text in the image.](https://ucarecdn.com/a10ef89f-6529-473a-9982-5ede5e5bb7a6/-/preview/1000x734/)
 
 </div>
 
