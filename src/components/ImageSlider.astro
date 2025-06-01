@@ -1,0 +1,55 @@
+<div class="image-slider">
+  <slot />
+</div>
+
+<style>
+  :global(.image-slider) {
+    grid-column: 2 / span 3 !important;
+    max-inline-size: 1280px;
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  :global(.image-slider > *:nth-child(2)) {
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  .image-slider {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .image-slider:hover {
+    cursor: all-scroll;
+  }
+
+  @media screen and (width < 900px) {
+    .image-slider {
+      grid-column: 1 / span 1 !important;
+      display: flex;
+      overflow-x: auto;
+      /* animation: scroll-x 4s cubic-bezier(0.4, 0, 0.2, 1);
+      animation-delay: 1s; */
+    }
+
+    /* @keyframes scroll-x {
+      0% {
+        transform: translateX(0);
+      }
+      60% {
+        transform: translateX(-12%);
+      }
+      80% {
+        transform: translateX(-12%);
+      }
+      90% {
+        transform: translateX(-12%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    } */
+  }
+</style>
