@@ -23,16 +23,16 @@ interface Props {
       }
     | string;
   coverAlt: string;
-  loading: "eager" | "lazy";
+  loading?: "eager" | "lazy";
 }
 
-const { slug, title, pubDate, cover, coverAlt, loading } = Astro.props;
+const { slug, title, pubDate, cover, coverAlt } = Astro.props;
 ---
 
 <li>
   <a href={`/blog/${slug}/`}>
     <Image
-      loading={loading}
+      loading="lazy"
       aria-hidden="true"
       width={1280}
       height={720}

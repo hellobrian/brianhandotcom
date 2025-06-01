@@ -31,7 +31,6 @@ const posts = allBlogPosts.filter((blog) =>
                 pubDate={post.data.pubDate}
                 cover={post.data.cover}
                 coverAlt={post.data.coverAlt}
-                loading={index <= 2 ? "eager" : "lazy"}
               />
             ))
         }
