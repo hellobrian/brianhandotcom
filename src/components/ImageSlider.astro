@@ -10,15 +10,11 @@
     block-size: 100%;
   }
 
-  :global(.image-slider > *:nth-child(2)) {
-    block-size: 100%;
-    object-fit: cover;
-  }
-
   .image-slider {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    align-items: center;
   }
 
   .image-slider:hover {
@@ -30,6 +26,7 @@
       grid-column: 1 / span 1 !important;
       display: flex;
       overflow-x: auto;
+
       /* animation: scroll-x 4s cubic-bezier(0.4, 0, 0.2, 1);
       animation-delay: 1s; */
     }
