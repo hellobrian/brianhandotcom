@@ -6,12 +6,22 @@ interface Props {
   slug: string;
   title: string;
   pubDate: Date;
-  cover: {
-    height: number;
-    src: string;
-    width: number;
-    format: "avif" | "png" | "webp" | "jpeg" | "jpg" | "svg" | "tiff" | "gif";
-  };
+  cover:
+    | {
+        height: number;
+        src: string;
+        width: number;
+        format:
+          | "avif"
+          | "png"
+          | "webp"
+          | "jpeg"
+          | "jpg"
+          | "svg"
+          | "tiff"
+          | "gif";
+      }
+    | string;
   coverAlt: string;
   loading: "eager" | "lazy";
 }
@@ -26,8 +36,8 @@ const { slug, title, pubDate, cover, coverAlt, loading } = Astro.props;
       aria-hidden="true"
       width={1280}
       height={720}
-      src={cover}
-      alt={`${coverAlt}`}
+      src={typeof cover === "string" ? cover : cover.src}
+      alt={coverAlt}
       quality="high"
     />
     <h3 class="title">
