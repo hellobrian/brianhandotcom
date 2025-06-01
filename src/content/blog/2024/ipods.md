@@ -2,12 +2,12 @@
 title: "iPods: Kindles for Music"
 description: "Party like it's 2004"
 pubDate: "Mar 16 2024"
-cover: "/public/images/blog/2024/ipods/ipod-crop.png"
+cover: "https://ucarecdn.com/9d08c170-8c4f-43c2-898e-129442b77afe/-/preview/1000x666/"
 coverAlt: "A custom iPod Classic with black clickwheel and blue aluminum shell"
 tags: []
 ---
 
-![holding a custom iPod Classic with black clickwheel and blue aluminum shell](/images/blog/2024/ipods/ipod-hand.png)
+![holding a custom iPod Classic with black clickwheel and blue aluminum shell](https://ucarecdn.com/1ae8ed29-0922-4769-b329-fc63dfe09a21/-/preview/1000x666/)
 
 I started using iPods again. Here's what makes them work for me in 2024:
 

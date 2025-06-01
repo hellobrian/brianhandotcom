@@ -2,7 +2,7 @@
 title: "Weeknotes 1"
 description: "This is a semi-regular check-in to see whats up with me"
 pubDate: "May 26 2025"
-cover: "/public/images/blog/2024/vibe check 1/manhattan-beach-smokestacks.png"
+cover: "https://ucarecdn.com/b37ca1c8-24cb-4845-b442-c49e79fc9fd7/-/preview/1000x666/"
 coverAlt: "Manhattan Beach Smokestacks in California"
 tags: [Canon 5D Mark II, Weeknotes]
 isPublished: true
@@ -49,25 +49,28 @@ I came across a bunch of old photos from ten years ago. I was more active with p
   is:client
   initialFullView
   images={[
-    { src: "/images/blog/2024/vibe check 1/sxsw-2012.png", alt: "sxsw-2012" },
     {
-      src: "/images/blog/2024/vibe check 1/dirty-sixth-street.png",
+      src: "https://ucarecdn.com/29ecbdf7-df18-4eb5-bc01-3df06e758e78/-/preview/1000x969/",
+      alt: "sxsw-2012",
+    },
+    {
+      src: "https://ucarecdn.com/e8b7f40c-fe7f-4cc3-b537-09fa9b0b4028/-/preview/977x1000/",
       alt: "dirty-sixth-street",
     },
     {
-      src: "/images/blog/2024/vibe check 1/falafel-wrap-from-kebabilicious.png",
+      src: "https://ucarecdn.com/f5e6f5e5-8eb6-4859-9c6d-1d6173131954/-/preview/1000x658/",
       alt: "falafel-wrap-from-kebabilicious",
     },
     {
-      src: "/images/blog/2024/vibe check 1/tacos-from-torchys.png",
+      src: "https://ucarecdn.com/47d40b26-c01e-484a-b48d-e88184a59e16/-/preview/1000x668/",
       alt: "tacos-from-torchys",
     },
     {
-      src: "/images/blog/2024/vibe check 1/dad-in-california.png",
+      src: "https://ucarecdn.com/dc2f20aa-0276-4f6d-9df0-0b42e7b4f845/-/preview/1000x939/",
       alt: "dad-in-california",
     },
     {
-      src: "/images/blog/2024/vibe check 1/manhattan-beach-smokestacks.png",
+      src: "https://ucarecdn.com/b37ca1c8-24cb-4845-b442-c49e79fc9fd7/-/preview/1000x666/",
       alt: "manhattan-beach-smokestacks",
     },
   ]}
@@ -77,7 +80,9 @@ Back then I shot with a Canon 5D Mark II and a 50mm f/1.8 lens. I was - well, ac
 
 ## Slideshow component
 
-The slideshow component is a custom Astro component I built to display images.
+The slideshow component a React component that can be used in MDX files via Astro components.
+The name is a bit of a misnomer since it doesn't actually slide, it's currently
+built in a way that you can click through the images one by one. Clicking the image toggles between full and compact views - this is meant to view long portrait images in full view without resizeing or cropping them to fit the screen. View mode toggle only works on large screens, on smaller screens it always shows the full view.
 
 <Slideshow
   is:client
@@ -92,10 +97,6 @@ The slideshow component is a custom Astro component I built to display images.
     { src: "/images/blog-placeholder-5.jpg", alt: "blog-placeholder-5" },
   ]}
 />
-
-It's a React component that can be used in MDX files via Astro components.
-The name is a bit of a misnomer since it doesn't actually slide, it's currently
-built in a way that you can click through the images one by one. Clicking the image toggles between full and compact views - this is meant to view long portrait images in full view without resizeing or cropping them to fit the screen. View mode toggle only works on large screens, on smaller screens it always shows the full view.
 
 ```tsx
 <Slideshow
