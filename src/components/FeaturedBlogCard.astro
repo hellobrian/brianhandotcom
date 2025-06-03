@@ -51,12 +51,21 @@ const { slug, title, pubDate, cover, coverAlt } = Astro.props;
 
 <style>
   li {
-    inline-size: clamp(320px, 100vw, 75%);
-    margin: 0 auto;
-    text-align: center;
+    width: calc(50% - 1rem);
   }
   li * {
     text-decoration: none;
+  }
+  li:first-child {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  li:first-child img {
+    width: 100%;
+  }
+  li:first-child .title {
+    font-size: 2.369rem;
   }
   li img {
     margin-bottom: 0.5rem;
@@ -81,5 +90,18 @@ const { slug, title, pubDate, cover, coverAlt } = Astro.props;
   a:hover img {
     box-shadow: var(--box-shadow);
     transition: box-shadow 200ms ease-in-out;
+  }
+
+  @media (width < 720px) {
+    li {
+      width: 100%;
+      text-align: center;
+    }
+    li:first-child {
+      margin-bottom: 0;
+    }
+    li:first-child .title {
+      font-size: var(--step-1);
+    }
   }
 </style>

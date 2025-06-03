@@ -2,9 +2,9 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { getCollection } from "astro:content";
-import BlogCard from "../components/BlogCard.astro";
-import BlogCardList from "../components/BlogCardList.astro";
 import Tags from "../components/Tags.astro";
+import FeaturedBlogCard from "../components/FeaturedBlogCard.astro";
+import BlogCardList from "../components/BlogCardList.astro";
 
 // Get all entries from a collection.
 // Requires the name of the collection as an argument.
@@ -24,8 +24,8 @@ const posts = allBlogPosts.filter((blog) =>
         {
           posts
             .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-            .map((post, index) => (
-              <BlogCard
+            .map((post) => (
+              <FeaturedBlogCard
                 slug={post.slug}
                 title={post.data.title}
                 pubDate={post.data.pubDate}
