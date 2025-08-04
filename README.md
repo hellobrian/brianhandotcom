@@ -1,4 +1,8 @@
-# Astro Starter Kit: Blog
+# brianhan.com
+
+- image hosting: https://app.uploadcare.com/
+
+## Astro Starter Kit: Blog
 
 ```sh
 npm create astro@latest -- --template blog
