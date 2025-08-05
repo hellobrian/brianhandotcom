@@ -14,7 +14,7 @@ At **[IBM](https://www.ibm.com/)**, I helped start [Carbon Design Systems](https
 
 Outside of tech, I enjoy photography, building mechanical keyboards, and travelling wherever I can. I'm currently shooting with a [Fuji X100V](/tags/Fuji%20X100V), and doing most of my typing with a [Tiger 80 Lite](/blog/2024/keebs-tiger80lite-olivia/) TKL keyboard.
 
-### Skills
+## Skills
 
 - HTML
 - CSS
