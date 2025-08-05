@@ -61,4 +61,10 @@ const { frontmatter } = Astro.props;
     list-style-type: none;
     padding: 0;
   }
+
+  @media screen and (max-width: 720px) {
+    .resume-info {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
