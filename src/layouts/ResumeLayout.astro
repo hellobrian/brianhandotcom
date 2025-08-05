@@ -1,0 +1,63 @@
+---
+import ResumeHead from "../components/ResumeHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <ResumeHead
+      title={frontmatter.title}
+      description={frontmatter.description}
+    />
+  </head>
+  <body>
+    <Header />
+
+    <main class="resume">
+      <h2 class="title">{frontmatter.title}</h2>
+      <ul class="resume-info">
+        <li>
+          <a href={`mailto:${frontmatter.email}`}>{frontmatter.email}</a>
+        </li>
+        <li>
+          <a
+            href={frontmatter.linkedin}
+            target="_blank"
+            rel="noopener noreferrer">{frontmatter.linkedin}</a
+          >
+        </li>
+        <li>
+          <a href={frontmatter.github} target="_blank" rel="noopener noreferrer"
+            >{frontmatter.github}</a
+          >
+        </li>
+      </ul>
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>
+
+<style>
+  main.resume {
+    max-width: 720px;
+  }
+
+  h2.title {
+    font-size: var(--step-2);
+    margin-bottom: 1rem;
+    text-decoration: none;
+  }
+
+  .resume-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding: 0;
+  }
+</style>
