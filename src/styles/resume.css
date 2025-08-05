@@ -216,4 +216,8 @@ hr {
   h6 {
     font-size: initial;
   }
+
+  .save-as-pdf {
+    display: none;
+  }
 }
