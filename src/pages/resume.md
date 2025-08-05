@@ -10,7 +10,7 @@ github: github.com/hellobrian
 
 ## Professional Summary
 
-**Senior UX Developer & Design Engineer** based in Austin, TX with 10+ years of experience building responsive, and accessible web applications for enterprise using **HTML**, **CSS**, **React**, and **TypeScript**.
+**Senior UX Developer** based in Austin, TX with **10+ years** of experience building responsive, and accessible web applications for enterprise using **HTML**, **CSS**, **React**, and **TypeScript**.
 
 ---
 
@@ -18,13 +18,20 @@ github: github.com/hellobrian
 
 ### Indeed
 
-**Senior UX Developer**, May 2022 to August 2025 - Austin, TX
+**Senior UX Developer**, May 2022 to August 2025 in Austin, TX
 
-- Building user experiences in React for employers on various products at Indeed - Smart Sourcing, and Premium Sponsored Jobs.
+Focused on accessible, and highly maintainable user experiences built to help employers hire more easily using Indeed.com.
+
+**Key Contributions**:
+
+- **Drove $11.6M+ in revenue growth** by building and expanding frontend development for Premium Sponsored Jobs, including upsell flows and candidate management tools.
+- **Boosted employer engagement** by redesigning Smart Sourcing with new responsive layouts, a card-based UI, later adapted to Premium for more consistency between products. Implmentation of card-based UI alone contributed to 4% increase in employer outreaches to candidates.
+- **Championed accessibility**, collaborating across teams to ensure WCAG compliance and mentoring contributors on inclusive design practices.
+- **Led large-scale migrations** to Indeed’s design system, improving component reuse and reducing tech debt.
 
 ### FireHydrant
 
-**Senior Software Engineer**, August 2021 to April 2022 - New York City, NY
+**Senior Software Engineer**, August 2021 to April 2022 in New York City, NY
 
 - Building features for FireHydrant’s main web app using React.
 - Active Design System contributor.
@@ -32,21 +39,21 @@ github: github.com/hellobrian
 
 ### Indeed
 
-**Senior UX Developer**, October 2018 to August 2021 - Austin, TX
+**Senior UX Developer**, October 2018 to August 2021 in Austin, TX
 
 - Worked on multiple enterprise products focusing on building UI
   and optimizing UX with React and CSS.
 
 ### Accenture Interactive
 
-**Senior Front End Developer**, September 2017 to September 2018 - Austin, TX
+**Senior Front End Developer**, September 2017 to September 2018 in Austin, TX
 
 - Built apps with React for various clients all over the US. Collaborated
   regularly with studios like Fjord and Intrepid Pursuits.
 
 ### IBM
 
-**Front End Developer**, July 2014 to September 2017 - Austin, TX
+**Front End Developer**, July 2014 to September 2017 in Austin, TX
 
 - Worked on Carbon Design System, an award-winning, open-source
   design system used for building user-interfaces at IBM.
@@ -59,7 +66,7 @@ github: github.com/hellobrian
 
 ## Education
 
-### Ryerson University, Toronto, Canada
+### Ryerson University in Toronto, Canada
 
 Bachelors of Journalism, Broadcast TV & Radio
 
