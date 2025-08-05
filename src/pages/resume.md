@@ -4,8 +4,8 @@ title: Brian Han
 description: Resume for Brian Han
 location: Austin, TX
 email: brianhan@hey.com
-linkedin: linkedin.com/in/hellobrian
-github: github.com/hellobrian
+linkedin: https://linkedin.com/in/hellobrian
+github: https://github.com/hellobrian
 ---
 
 ## Professional Summary
