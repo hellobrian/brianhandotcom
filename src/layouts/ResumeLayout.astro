@@ -139,7 +139,7 @@ const { frontmatter } = Astro.props;
 
   .title-container {
     display: flex;
-    /* justify-content: space-between; */
+    flex-wrap: wrap;
     gap: 1rem;
     align-items: center;
     margin-bottom: 1rem;
@@ -156,7 +156,7 @@ const { frontmatter } = Astro.props;
 
   .save-as-pdf {
     border: 2px solid var(--accent-light);
-    block-size: var(--step-2);
+    min-block-size: var(--step-2);
     border-radius: 16px;
     padding: 0.25rem 0.5rem;
     font-weight: bold;
