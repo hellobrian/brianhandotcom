@@ -1,0 +1,66 @@
+---
+import AboutHead from "../components/AboutHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+import { Image } from "astro:assets";
+
+const { frontmatter } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <AboutHead
+      title={frontmatter.title}
+      description={frontmatter.description}
+    />
+  </head>
+  <body>
+    <Header />
+
+    <section class="profile">
+      <div class="profile-frame">
+        <Image
+          src="/images/brianhan2025.jpg"
+          alt="Profile picture of Brian Han"
+          width={800}
+          height={800}
+          class="profile-image"
+        />
+      </div>
+    </section>
+
+    <main class="about">
+      <h2 class="title">{frontmatter.title}</h2>
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>
+
+<style>
+  main.about {
+    max-width: 720px;
+  }
+
+  .profile {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
+  .profile-frame {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .profile-image {
+    object-fit: cover;
+    object-position: 30px 35px;
+    scale: 1.44;
+  }
+</style>
