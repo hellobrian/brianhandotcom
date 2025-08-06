@@ -1,24 +1,19 @@
 ---
+import BaseLayout from "./BaseLayout.astro";
 import AboutHead from "../components/AboutHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 
 import { Image } from "astro:assets";
 
 const { frontmatter } = Astro.props;
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <AboutHead
-      title={frontmatter.title}
-      description={frontmatter.description}
-    />
-  </head>
-  <body>
-    <Header />
-
+<BaseLayout title={frontmatter.title} description={frontmatter.description}>
+  <AboutHead
+    title={frontmatter.title}
+    description={frontmatter.description}
+    slot="head"
+  />
+  <main class="about">
     <section class="profile">
       <div class="profile-frame">
         <Image
@@ -30,15 +25,10 @@ const { frontmatter } = Astro.props;
         />
       </div>
     </section>
-
-    <main class="about">
-      <h2 class="title">{frontmatter.title}</h2>
-      <slot />
-    </main>
-
-    <Footer />
-  </body>
-</html>
+    <h2 class="title">{frontmatter.title}</h2>
+    <slot />
+  </main>
+</BaseLayout>
 
 <style>
   main.about {
@@ -48,7 +38,7 @@ const { frontmatter } = Astro.props;
   .profile {
     display: flex;
     justify-content: center;
-    margin-top: 4rem;
+    margin-bottom: 2rem;
   }
 
   .profile-frame {

@@ -1,36 +1,27 @@
 ---
+import BaseLayout from "./BaseLayout.astro";
 import ResumeHead from "../components/ResumeHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import ResumeInfo from "../components/ResumeInfo.astro";
 import SaveResume from "../components/SaveResume.astro";
 
 const { frontmatter } = Astro.props;
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <ResumeHead
-      title={frontmatter.title}
-      description={frontmatter.description}
-    />
-  </head>
-  <body>
-    <Header />
-
-    <main class="resume">
-      <div class="title-container">
-        <h2 class="title">{frontmatter.title}</h2>
-        <SaveResume />
-      </div>
-      <ResumeInfo frontmatter={frontmatter} />
-      <slot />
-    </main>
-
-    <Footer />
-  </body>
-</html>
+<BaseLayout title={frontmatter.title} description={frontmatter.description}>
+  <ResumeHead
+    slot="head"
+    title={frontmatter.title}
+    description={frontmatter.description}
+  />
+  <main class="resume">
+    <div class="title-container">
+      <h2 class="title">{frontmatter.title}</h2>
+      <SaveResume />
+    </div>
+    <ResumeInfo frontmatter={frontmatter} />
+    <slot />
+  </main>
+</BaseLayout>
 
 <style>
   main.resume {
