@@ -1,0 +1,54 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BlogHead from "../components/BlogHead.astro";
+import BaseLayout from "./BaseLayout.astro";
+import Tags from "../components/Tags.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+
+type Variant = "base" | "blog";
+type Props = CollectionEntry<"blog">["data"] & { variant?: Variant };
+
+const { title, description, pubDate, updatedDate, tags } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <BlogHead title={title} description={description} slot="head" />
+  <main>
+    <article>
+      <div class="prose">
+        <div class="title">
+          <div class="date">
+            <FormattedDate
+              date={pubDate}
+              lastUpdated={`Last updated on ${updatedDate?.toLocaleDateString(
+                "en-us",
+                {
+                  year: "numeric",
+                  month: "short",
+                  day: "numeric",
+                }
+              )}`}
+            />
+          </div>
+          <h1>{title}</h1>
+        </div>
+        <hr />
+        <slot />
+        <hr />
+        {tags.length > 0 && <Tags tags={tags} />}
+      </div>
+    </article>
+  </main>
+</BaseLayout>
+
+<style>
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+</style>
