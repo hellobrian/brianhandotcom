@@ -26,7 +26,7 @@ const posts = allBlogPosts.filter((blog) =>
             .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
             .map((post) => (
               <FeaturedBlogCard
-                slug={post.slug}
+                slug={post.id}
                 title={post.data.title}
                 pubDate={post.data.pubDate}
                 cover={post.data.cover}
