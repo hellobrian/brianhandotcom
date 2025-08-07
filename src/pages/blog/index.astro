@@ -19,7 +19,7 @@ const posts = (await getCollection("blog"))
         {
           posts.map((post, index) => (
             <BlogCard
-              slug={post.slug}
+              slug={post.id}
               title={post.data.title}
               pubDate={post.data.pubDate}
               cover={post.data.cover}
