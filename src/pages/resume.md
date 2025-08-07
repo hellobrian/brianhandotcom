@@ -22,12 +22,10 @@ github: https://github.com/hellobrian
 
 Focused on accessible, and highly maintainable user experiences built to help employers hire more easily using Indeed.com.
 
-**Key Contributions**:
-
-- **Drove $11.6M+ in revenue growth** by building and expanding frontend development for Premium Sponsored Jobs, including upsell flows and candidate management tools.
-- **Boosted employer engagement** by redesigning Smart Sourcing with new responsive layouts, a card-based UI, later adapted to Premium for more consistency between products. Implmentation of card-based UI alone contributed to 4% increase in employer outreaches to candidates.
 - **Championed accessibility**, collaborating across teams to ensure WCAG compliance and mentoring contributors on inclusive design practices.
 - **Led large-scale migrations** to Indeed’s design system, improving component reuse and reducing tech debt.
+- **Drove revenue growth** by building and expanding frontend development for Premium Sponsored Jobs, including upsell flows and candidate management tools.
+- **Boosted employer engagement** by redesigning Smart Sourcing with new responsive layouts, a card-based UI, later adapted to Premium for more consistency between products. Implmentation of card-based UI contributed to increase in employer outreaches to candidates.
 
 ### FireHydrant
 
