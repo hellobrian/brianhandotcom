@@ -59,15 +59,3 @@ Focused on accessible, and highly maintainable user experiences built to help em
   team of devs and designers maintaining our core open-source libraries:
   carbon-components (HTML, SCSS, ES2015), carbon-components-react
   and carbon-icons (SVG icons).
-
----
-
-## Education
-
-### Ryerson University in Toronto, Canada
-
-Bachelors of Journalism, Broadcast TV & Radio
-
-- Specialized in Broadcast Journalism and Documentary filmmaking. I
-  continue to rely on research, thorough communication, and quickly
-  learning to solve problems.

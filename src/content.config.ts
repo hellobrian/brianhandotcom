@@ -24,4 +24,33 @@ const blog = defineCollection({
     }),
 });
 
-export const collections = { blog };
+const data = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/data" }),
+  // Type-check frontmatter using a schema
+  schema: z.object({
+    contact: z.object({
+      email: z.string().email(),
+      linkedin: z.string().url().optional(),
+      github: z.string().url().optional(),
+      website: z.string().url().optional(),
+      phone: z.string().optional(),
+      location: z.string().optional(),
+    }),
+    education: z.array(
+      z.object({
+        institution: z.string(),
+        degree: z.string(),
+        graduationYear: z.number(),
+      })
+    ),
+    skills: z.object({
+      languages: z.array(z.string()),
+      frameworks: z.array(z.string()),
+      tools: z.array(z.string()),
+      testing: z.array(z.string()),
+      methods: z.array(z.string()),
+    }),
+  }),
+});
+
+export const collections = { blog, data };

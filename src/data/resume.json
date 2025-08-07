@@ -1,0 +1,28 @@
+{
+  "contact": {
+    "email": "brianhan@hey.com",
+    "linkedin": "https://linkedin.com/in/hellobrian",
+    "github": "https://github.com/hellobrian",
+    "website": "https://brianhan.com"
+  },
+  "education": [
+    {
+      "institution": "Ryerson University",
+      "degree": "Bachelors of Journalism, Broadcast TV & Radio",
+      "graduationYear": 2010
+    }
+  ],
+  "skills": {
+    "languages": ["JavaScript", "TypeScript", "HTML", "CSS"],
+    "frameworks": ["React", "Astro", "Node.js", "Next.js"],
+    "testing": ["Jest", "Playwright", "Testing Library"],
+    "tools": ["Git", "Docker", "Storybook"],
+    "methods": [
+      "Accessibility",
+      "WCAG",
+      "ARIA",
+      "Design Systems",
+      "Responsive Design"
+    ]
+  }
+}
