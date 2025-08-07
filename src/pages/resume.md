@@ -8,13 +8,13 @@ linkedin: https://linkedin.com/in/hellobrian
 github: https://github.com/hellobrian
 ---
 
-## Professional Summary
+## Summary
 
-**Senior UX Developer** based in Austin, TX with **10+ years** of experience building responsive, and accessible web applications for enterprise using **HTML**, **CSS**, **React**, and **TypeScript**.
+Senior UX Developer based in Austin, TX with **10+ years** of experience specializing responsive design, accessibility (a11y), building software at scale, and maintaining design systems.
 
 ---
 
-## Experience
+## Work Experience
 
 ### Indeed
 
