@@ -13,23 +13,3 @@ At **[Indeed](https://www.indeed.com/hire)**, I worked on multiple platforms for
 At **[IBM](https://www.ibm.com/)**, I helped start [Carbon Design Systems](https://carbondesignsystem.com/), IBM's open source design system that leverages IBM Design Language. This helped to standardize code and interfaces on large scale basis at IBM - delievering a more consistent experience to users and developers.
 
 Outside of tech, I enjoy photography, building mechanical keyboards, and travelling wherever I can. I'm currently shooting with a [Fuji X100V](/tags/Fuji%20X100V), and doing most of my typing with a [Tiger 80 Lite](/blog/2024/keebs-tiger80lite-olivia/) TKL keyboard.
-
-## Skills
-
-- HTML
-- CSS
-- Git
-- React
-- Next
-- Astro
-- TypeScript
-- E2E Testing
-- Playwright
-- Unit Testing
-- Jest
-- Testing Library
-- Vitest
-- A11y Best Practices
-- Responsive Design
-- Design Systems
-- Storybook

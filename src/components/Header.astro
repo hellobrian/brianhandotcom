@@ -5,7 +5,7 @@ import { SITE_TITLE } from "../consts";
 
 <header>
   <nav>
-    <h2><img src="/favicon.svg" width="18" height="18"  /><a href="/">{SITE_TITLE}</a></h2>
+    <h2><img aria-hidden="true" src="/favicon.svg" width="18" height="18" /><a href="/">{SITE_TITLE}</a></h2>
     <div class="internal-links">
       <HeaderLink class='header-link' href="/">Home</HeaderLink>
       <HeaderLink class='header-link' href="/blog">Blog</HeaderLink>
@@ -50,6 +50,7 @@ import { SITE_TITLE } from "../consts";
 
   .internal-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 1em;
   }
 
@@ -57,7 +58,7 @@ import { SITE_TITLE } from "../consts";
     nav {
       flex-direction: column;
       align-items: flex-start;
-      padding: 1em;
+      padding: 1em 0;
     }
   }
 </style>

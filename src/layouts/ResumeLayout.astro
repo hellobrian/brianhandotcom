@@ -1,49 +1,190 @@
 ---
+import { getEntry } from "astro:content";
+
 import BaseLayout from "./BaseLayout.astro";
 import ResumeHead from "../components/ResumeHead.astro";
 import ResumeInfo from "../components/ResumeInfo.astro";
 import SaveResume from "../components/SaveResume.astro";
 
 const { frontmatter } = Astro.props;
+
+const resume = await getEntry("data", "resume");
+
+// Summary
+const summary = resume?.data.summary || "";
+
+// Experience
+const experience = resume?.data.experience || [];
+
+// Contact information
+const email = resume?.data.contact.email || "";
+const linkedin = resume?.data.contact.linkedin || "";
+const github = resume?.data.contact.github || "";
+const website = resume?.data.contact.website || "";
+
+// Education
+const education = resume?.data.education || [];
+
+// Skills
+const languages = resume?.data.skills.languages || [];
+const frameworks = resume?.data.skills.frameworks || [];
+const tools = resume?.data.skills.tools || [];
+const testing = resume?.data.skills.testing || [];
+const methods = resume?.data.skills.methods || [];
 ---
 
-<BaseLayout title={frontmatter.title} description={frontmatter.description}>
+<BaseLayout title={"Brian Han"} description={"Resume for Brian Han"}>
   <ResumeHead
     slot="head"
-    title={frontmatter.title}
-    description={frontmatter.description}
+    title={"Brian Han"}
+    description={"Resume for Brian Han"}
   />
   <main class="resume">
-    <div class="title-container">
-      <h2 class="title">{frontmatter.title}</h2>
-      <SaveResume />
-    </div>
-    <ResumeInfo frontmatter={frontmatter} />
-    <slot />
+    <section class="resume-name">
+      <h2>Brian Han</h2>
+    </section>
+
+    <section class="resume-experience">
+      <h2>Summary</h2>
+      <p class="margin-bottom">{summary}</p>
+
+      <h2>Experience</h2>
+      {
+        experience.map((exp) => (
+          <div class="margin-bottom">
+            <h3>
+              {exp.position} &bull; {exp.company}
+            </h3>
+            <p>{exp.duration}</p>
+            <ul>
+              {exp.responsibilities.map((res) => (
+                <li>{res}</li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </section>
+    <section class="resume-qualifications">
+      <h2>
+        Contact
+        <SaveResume />
+      </h2>
+      <ResumeInfo
+        email={email}
+        linkedin={linkedin}
+        github={github}
+        website={website}
+      />
+
+      <h2>Education</h2>
+      {
+        education.map((edu) => (
+          <p class="margin-bottom">
+            <strong>{edu.institution}</strong> - {edu.degree}
+          </p>
+        ))
+      }
+
+      <h2>Skills</h2>
+      <ul class="skills">
+        {languages.map((language) => <li class="language">{language}</li>)}
+        {frameworks.map((framework) => <li class="framework">{framework}</li>)}
+        {tools.map((tool) => <li class="tool">{tool}</li>)}
+        {testing.map((test) => <li class="test">{test}</li>)}
+        {methods.map((method) => <li class="method">{method}</li>)}
+      </ul>
+    </section>
   </main>
 </BaseLayout>
 
 <style>
-  main.resume {
-    max-width: 720px;
+  .resume {
+    display: grid;
+    grid-template-areas:
+      "name name"
+      "experience qualifications";
+    grid-template-columns: 1fr 30ch;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    max-inline-size: 1400px;
   }
 
-  h2.title {
-    font-size: var(--step-2);
+  .resume h2 {
     margin-bottom: 1rem;
-    text-decoration: none;
-    letter-spacing: -0.3px;
   }
 
-  .title-container {
+  .resume-name {
+    grid-area: name;
+  }
+
+  .resume-name h2 {
+    display: none;
+  }
+
+  .resume-experience {
+    grid-area: experience;
+    max-inline-size: 65ch;
+  }
+
+  .resume-qualifications {
+    grid-area: qualifications;
+  }
+
+  .resume-qualifications h2 {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
     align-items: center;
+    gap: 0.5rem;
+  }
+
+  .margin-bottom {
     margin-bottom: 1rem;
   }
 
-  .title {
-    margin-bottom: 0 !important;
+  h2 {
+    font-size: var(--step-1);
+    letter-spacing: 0.5px;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-family: "Atkinson", sans-serif;
+    font-weight: 700;
+    font-size: var(--step-0);
+  }
+
+  p {
+    margin: 0;
+  }
+
+  ul {
+    padding-left: 1rem;
+    margin: 0;
+  }
+  .skills {
+    list-style: none;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 980px) {
+    .resume {
+      grid-template-areas:
+        "name"
+        "experience"
+        "qualifications";
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media print {
+    h2,
+    h3 {
+      font-size: var(--step-0);
+    }
+
+    .resume-name h2 {
+      display: initial;
+      font-size: var(--step-2);
+    }
   }
 </style>
