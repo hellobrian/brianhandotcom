@@ -28,6 +28,16 @@ const data = defineCollection({
   loader: glob({ pattern: "**/*.json", base: "./src/data" }),
   // Type-check frontmatter using a schema
   schema: z.object({
+    summary: z.string(),
+    experience: z.array(
+      z.object({
+        company: z.string(),
+        position: z.string(),
+        duration: z.string(),
+        location: z.string(),
+        responsibilities: z.array(z.string()),
+      })
+    ),
     contact: z.object({
       email: z.string().email(),
       linkedin: z.string().url().optional(),
