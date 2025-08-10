@@ -20,6 +20,7 @@ const experience = resume?.data.experience || [];
 const email = resume?.data.contact.email || "";
 const linkedin = resume?.data.contact.linkedin || "";
 const github = resume?.data.contact.github || "";
+const website = resume?.data.contact.website || "";
 
 // Education
 const education = resume?.data.education || [];
@@ -70,7 +71,12 @@ const methods = resume?.data.skills.methods || [];
         <SaveResume />
       </h2>
 
-      <ResumeInfo email={email} linkedin={linkedin} github={github} />
+      <ResumeInfo
+        email={email}
+        linkedin={linkedin}
+        github={github}
+        website={website}
+      />
 
       <h2>Education</h2>
 
