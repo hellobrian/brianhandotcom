@@ -5,10 +5,10 @@
 
   header,
   footer {
-    display: none !important;
+    display: none;
   }
 
   * {
-    font-size: 12px;
+    font-size: 0.9rem;
   }
 }

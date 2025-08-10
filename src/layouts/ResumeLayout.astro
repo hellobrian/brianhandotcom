@@ -46,12 +46,12 @@ const methods = resume?.data.skills.methods || [];
 
     <section class="resume-experience">
       <h2>Summary</h2>
-      <p>{summary}</p>
+      <p class="margin-bottom">{summary}</p>
 
       <h2>Experience</h2>
       {
         experience.map((exp) => (
-          <div>
+          <div class="margin-bottom">
             <h3>
               {exp.position} &bull; {exp.company}
             </h3>
@@ -70,7 +70,6 @@ const methods = resume?.data.skills.methods || [];
         Contact
         <SaveResume />
       </h2>
-
       <ResumeInfo
         email={email}
         linkedin={linkedin}
@@ -79,10 +78,9 @@ const methods = resume?.data.skills.methods || [];
       />
 
       <h2>Education</h2>
-
       {
         education.map((edu) => (
-          <p>
+          <p class="margin-bottom">
             <strong>{edu.institution}</strong> - {edu.degree}
           </p>
         ))
@@ -139,6 +137,10 @@ const methods = resume?.data.skills.methods || [];
     gap: 0.5rem;
   }
 
+  .margin-bottom {
+    margin-bottom: 1rem;
+  }
+
   h2 {
     font-size: var(--step-1);
     letter-spacing: 0.5px;
@@ -151,8 +153,13 @@ const methods = resume?.data.skills.methods || [];
     font-size: var(--step-0);
   }
 
+  p {
+    margin: 0;
+  }
+
   ul {
     padding-left: 1rem;
+    margin: 0;
   }
   .skills {
     list-style: none;
@@ -160,8 +167,14 @@ const methods = resume?.data.skills.methods || [];
   }
 
   @media print {
+    h2,
+    h3 {
+      font-size: var(--step-0);
+    }
+
     .resume-name h2 {
       display: initial;
+      font-size: var(--step-2);
     }
   }
 </style>
