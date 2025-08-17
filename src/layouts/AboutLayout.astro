@@ -17,7 +17,7 @@ const { frontmatter } = Astro.props;
     <section class="profile">
       <div class="profile-frame">
         <Image
-          src="/images/brianhan2025.jpg"
+          src="/images/brianhan-new.jpg"
           alt="Profile picture of Brian Han"
           width={800}
           height={800}
@@ -44,6 +44,7 @@ const { frontmatter } = Astro.props;
   .profile-frame {
     height: 200px;
     width: 200px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: var(--box-shadow);
@@ -51,7 +52,20 @@ const { frontmatter } = Astro.props;
 
   .profile-image {
     object-fit: cover;
-    object-position: 30px 35px;
-    scale: 1.44;
+    scale: 1.2;
+    object-position: 8px 9px;
+    aspect-ratio: 1 / 1;
+  }
+
+  @media screen and (max-width: 320px) {
+    .profile-frame {
+      height: 80%;
+      width: 80%;
+    }
+
+    .profile-image {
+      scale: 1.1;
+      object-position: 0px 0px;
+    }
   }
 </style>
