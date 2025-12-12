@@ -1,0 +1,38 @@
+---
+const { email, linkedin, github, website } = Astro.props;
+---
+
+<div class="resume-info">
+  <p>
+    <strong>Email:</strong>
+    <a href={`mailto:${email}`}>{email}</a>
+  </p>
+  <p>
+    <strong>LinkedIn:</strong>
+    <a href={linkedin} target="_blank" rel="noopener noreferrer">{linkedin}</a>
+  </p>
+  <p>
+    <strong>GitHub:</strong>
+    <a href={github} target="_blank" rel="noopener noreferrer">{github}</a>
+  </p>
+  <p>
+    <strong>Website:</strong>
+    <a href={website} target="_blank" rel="noopener noreferrer">{website}</a>
+  </p>
+</div>
+
+<style>
+  .resume-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    line-height: 1;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+</style>
