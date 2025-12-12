@@ -1,16 +1,19 @@
 {
-  "summary": "Senior UX Developer based in Austin, TX with 10+ years of experience specializing responsive design, accessibility (a11y), building software at scale, and maintaining design systems.",
+  "summary": "Senior UX Developer based in Austin, TX with 10+ years of experience specializing in responsive design, accessibility (a11y), building software at scale, and maintaining design systems.",
   "experience": [
     {
       "company": "Indeed",
       "position": "Senior UX Developer",
-      "duration": "May 2022 - August 2025",
+      "duration": "October 2018 - August 2025",
       "location": "Austin, TX",
       "responsibilities": [
         "Championed accessibility by collaborating across teams to ensure WCAG compliance and mentoring contributors on inclusive design practices.",
         "Led large-scale migrations to Indeed's design system, improving component reuse and reducing tech debt.",
-        "Drove revenue growth and employer engagement by building Smart Sourcing, and Premium Sponsored Jobs, including upsell flows and candidate management tools."
-      ]
+        "Drove revenue growth and employer engagement by building Smart Sourcing, and Premium Sponsored Jobs, including upsell flows and candidate management tools.",
+        "Worked on multiple enterprise products focusing on building UI and optimizing UX."
+      ],
+      "visible": true,
+      "highlighted": true
     },
     {
       "company": "FireHydrant",
@@ -21,23 +24,18 @@
         "Built features for main web app using React.",
         "Active Design System contributor.",
         "Advocate for best practices around quality assurance and automated testing."
-      ]
-    },
-    {
-      "company": "Indeed",
-      "position": "Senior UX Developer",
-      "duration": "October 2018 - August 2021",
-      "location": "Austin, TX",
-      "responsibilities": [
-        "Worked on multiple enterprise products focusing on building UI and optimizing UX."
-      ]
+      ],
+      "visible": false,
+      "highlighted": false
     },
     {
       "company": "Accenture Interactive",
       "position": "Senior Front End Developer",
       "duration": "September 2017 - September 2018",
       "location": "Austin, TX",
-      "responsibilities": ["Built apps with React for various clients."]
+      "responsibilities": ["Built apps with React for various clients."],
+      "visible": true,
+      "highlighted": false
     },
     {
       "company": "IBM",
@@ -46,7 +44,9 @@
       "location": "Austin, TX",
       "responsibilities": [
         "Core team member of the Carbon Design System, an award-winning, open-source design system used for building user-interfaces at IBM."
-      ]
+      ],
+      "visible": true,
+      "highlighted": true
     }
   ],
   "contact": {

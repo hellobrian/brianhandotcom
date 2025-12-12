@@ -36,6 +36,7 @@ const data = defineCollection({
         duration: z.string(),
         location: z.string(),
         responsibilities: z.array(z.string()),
+        highlighted: z.boolean().optional().default(true),
       })
     ),
     contact: z.object({
