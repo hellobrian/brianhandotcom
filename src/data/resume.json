@@ -2,15 +2,28 @@
   "summary": "Senior UX Developer based in Austin, TX with 10+ years of experience specializing in responsive design, accessibility (a11y), building software at scale, and maintaining design systems.",
   "experience": [
     {
-      "company": "Indeed",
-      "position": "Senior UX Developer",
-      "duration": "October 2018 - August 2025",
+      "company": "Electronic Arts (EA)",
+      "position": "Design System Engineer",
+      "duration": "February 2026 - Present",
       "location": "Austin, TX",
       "responsibilities": [
-        "Championed accessibility by collaborating across teams to ensure WCAG compliance and mentoring contributors on inclusive design practices.",
+        "Build and maintain EA's design system by developing new components, fixing issues, and implementing improvements.",
+        "Own operational responsibilities including backlog prioritization, ticket triaging, release planning, and documentation.",
+        "Work closely with designers and engineers to keep Figma designs and coded components in sync.",
+        "Guide teams on best practices for accessible and well-implemented components.",
+        "Identify and execute improvements to system performance, scalability, and long-term sustainability."
+      ]
+    },
+    {
+      "company": "Indeed",
+      "position": "Senior UX Developer",
+      "duration": "May 2022 - August 2025",
+      "location": "Austin, TX",
+      "responsibilities": [
+        "Championed accessibility across teams, ensuring WCAG compliance and mentoring contributors on inclusive design.",
         "Led large-scale migrations to Indeed's design system, improving component reuse and reducing tech debt.",
-        "Drove revenue growth and employer engagement by building Smart Sourcing, and Premium Sponsored Jobs, including upsell flows and candidate management tools.",
-        "Worked on multiple enterprise products focusing on building UI and optimizing UX."
+        "Built Smart Sourcing and Premium Sponsored Jobs features that drove revenue growth and employer engagement.",
+        "Contributed to multiple enterprise products, building UI and optimizing user experience."
       ],
       "visible": true,
       "highlighted": true
@@ -21,12 +34,23 @@
       "duration": "August 2021 - April 2022",
       "location": "New York City, NY (Remote)",
       "responsibilities": [
-        "Built features for main web app using React.",
-        "Active Design System contributor.",
-        "Advocate for best practices around quality assurance and automated testing."
+        "Developed features using React, contributing to core product functionality.",
+        "Actively contributed to the internal design system, ensuring consistency across the platform.",
+        "Advocated for best practices in quality assurance and automated testing across the engineering team."
       ],
       "visible": false,
       "highlighted": false
+    },
+    {
+      "company": "Indeed",
+      "position": "Senior UX Developer",
+      "duration": "October 2018 - Aug 2021",
+      "location": "Austin, TX",
+      "responsibilities": [
+        "Front-end development for Indeed Hire platform using React and CSS."
+      ],
+      "visible": true,
+      "highlighted": true
     },
     {
       "company": "Accenture Interactive",

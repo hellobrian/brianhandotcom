@@ -51,48 +51,20 @@ const methods = resume?.data.skills.methods || [];
 
       <h2>Experience</h2>
       {
-        experience
-          .filter((exp) => exp.highlighted)
-          .map((exp) => (
-            <div class="margin-bottom">
-              <h3>
-                {exp.position} &bull; {exp.company}
-              </h3>
-              <p>{exp.duration}</p>
-              <ul>
-                {exp.responsibilities.map((res) => (
-                  <li>{res}</li>
-                ))}
-              </ul>
-            </div>
-          ))
+        experience.map((exp) => (
+          <div class="margin-bottom">
+            <h3>
+              {exp.position} &bull; {exp.company}
+            </h3>
+            <p>{exp.duration}</p>
+            <ul>
+              {exp.responsibilities.map((res) => (
+                <li>{res}</li>
+              ))}
+            </ul>
+          </div>
+        ))
       }
-
-      <h2>Previous Experience</h2>
-      {
-        experience
-          .filter((exp) => !exp.highlighted)
-          .map((exp) => (
-            <div class="margin-bottom">
-              <h3>
-                {exp.position} &bull; {exp.company}
-              </h3>
-              <p>{exp.duration}</p>
-              <ul>
-                {exp.responsibilities.map((res) => (
-                  <li>{res}</li>
-                ))}
-              </ul>
-            </div>
-          ))
-      }
-      <p class="pdf-only">
-        <em
-          >For clarity in automated systems: My tenure at Indeed spans two
-          periods (October 2018 - August 2021 and May 2022 - August 2025), with
-          an interim role between. Full career details available upon request.</em
-        >
-      </p>
     </section>
     <section class="resume-qualifications">
       <h2>
