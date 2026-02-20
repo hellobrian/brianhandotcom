@@ -4,12 +4,13 @@
   grid-column: 2 / span 3;
   gap: 1rem;
   inline-size: 100%;
-  max-inline-size: 1280px;
+  max-inline-size: 1440px;
 }
 
 .slideshow-highlight {
   overflow: hidden;
-  max-block-size: var(--maxBlockSize);
+  /* max-block-size: var(--maxBlockSize); */
+  max-block-size: 100%;
   transition: max-block-size 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 

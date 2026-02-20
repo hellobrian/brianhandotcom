@@ -60,8 +60,8 @@ const SlideshowComponent = ({
             src={currentImage.src}
             alt={currentImage.alt ?? "Slideshow image"}
             // style={{ cursor: isFullView ? "zoom-out" : "zoom-in" }}
-            width={900}
-            height={600}
+            width={1280}
+            height={720}
             loading="lazy"
           />
         </div>
