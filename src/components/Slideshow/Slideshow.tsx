@@ -23,15 +23,15 @@ const thumbnailStyle = {
 
 const SlideshowComponent = ({
   images,
-  initialFullView = false,
+  initialFullView = true,
 }: SlideshowProps) => {
   const [currentImage, setCurrentImage] = React.useState(images[0]);
   const [isFullView, setFullView] = React.useState(initialFullView);
 
-  const toggleFullView = () => {
-    if (window.innerWidth <= 480) return;
-    setFullView(!isFullView);
-  };
+  // const toggleFullView = () => {
+  //   if (window.innerWidth <= 480) return;
+  //   setFullView(!isFullView);
+  // };
 
   return (
     <>
@@ -48,7 +48,7 @@ const SlideshowComponent = ({
           className="slideshow-highlight"
           role="group"
           tabIndex={0}
-          onClick={toggleFullView}
+          // onClick={toggleFullView}
           style={{
             // Add any additional custom styles here
             ...({
@@ -59,7 +59,7 @@ const SlideshowComponent = ({
           <img
             src={currentImage.src}
             alt={currentImage.alt ?? "Slideshow image"}
-            style={{ cursor: isFullView ? "zoom-out" : "zoom-in" }}
+            // style={{ cursor: isFullView ? "zoom-out" : "zoom-in" }}
             width={900}
             height={600}
             loading="lazy"
