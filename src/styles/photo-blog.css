@@ -1,0 +1,28 @@
+/* photo-blog.css */
+
+.photo > .container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 960px 1fr;
+  gap: 2rem;
+  inline-size: min(100%, 1440px);
+  margin: 0 auto;
+}
+
+.photo > .container > .gallery {
+  position: relative;
+  padding-block-start: 0rem;
+  align-self: start;
+}
+
+.photo > .container > .description {
+  position: sticky;
+  bottom: 0;
+  align-self: end;
+  margin-block-end: 1rem;
+  padding-block-end: 1rem;
+}
+
+.photo > .container > .description > p:first-child {
+  margin-block-start: 0;
+}
