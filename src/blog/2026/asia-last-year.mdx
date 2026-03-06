@@ -9,54 +9,120 @@ isPublished: true
 variant: "photo"
 ---
 
-import Slideshow from "../../components/Slideshow/Slideshow.astro";
+import Gallery from "../../components/Gallery.astro";
 
-<section class="container">
+<Gallery
+  images={[
+    {
+      src: "https://ucarecdn.com/92dfea6d-27f0-439f-af3d-4ebe06515e07/-/preview/1000x667/",
+      alt: "Man in suit smoking a cigarette in Singapore",
+    },
+    {
+      src: "https://ucarecdn.com/43e4ef28-3ebf-4e10-b483-e64e400f57dd/-/preview/1000x667/",
+      alt: "boy wearing cap walking with family in Singapore",
+    },
+    {
+      src: "https://ucarecdn.com/e9feb24b-f83b-44ac-b06b-4cf84b1f1ab6/-/preview/1000x667/",
+      alt: "boys posing for a photo in Singapore",
+    },
+  ]}
+  description={[
+    "Last summer, I took a trip to Asia with my Dad. We went from Seoul staying in the Jongno area, Singapore, Busan in the Haeundae area, and then I flew to Fukuoka on my own, and then took a train to Tokyo staying in Shibuya near Harajuku. Went on a lot more walks, and tried to keep my camera out as much as possible. Here are some photos from the trip.",
+    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  ]}
+/>
 
-<div class="gallery">
+<Gallery
+  images={[
+    {
+      src: "https://ucarecdn.com/125a7965-d484-4143-8faa-758a683a5282/-/preview/1000x667/",
+      alt: "girl on her phone walking through palace grounds",
+    },
+    {
+      src: "https://ucarecdn.com/c19e6a96-3fbb-4952-826a-ca5c655416e0/-/preview/1000x667/",
+      alt: "temple roof near hotel in Seoul, South Korea",
+    },
+    {
+      src: "https://ucarecdn.com/d2bae898-80d2-42b7-855e-783bf075e413/-/preview/1000x667/",
+      alt: "rooftop gym",
+    },
+    {
+      src: "https://ucarecdn.com/92ecc53d-a84f-4242-bda6-e055fc839909/-/preview/1000x667/",
+      alt: "lady in hanbok walking through a crowd of people in Seoul, South Korea",
+    },
+    {
+      src: "https://ucarecdn.com/56e8c41b-70c0-4ecb-b313-4d8fd596d4eb/-/preview/1000x750/",
+      alt: "dad listening to a record in a cafe in Seoul, South Korea",
+    },
+  ]}
+  description={[
+    "Last summer, I took a trip to Asia with my Dad. We went from Seoul staying in the Jongno area, Singapore, Busan in the Haeundae area, and then I flew to Fukuoka on my own, and then took a train to Tokyo staying in Shibuya near Harajuku. Went on a lot more walks, and tried to keep my camera out as much as possible. Here are some photos from the trip.",
+    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  ]}
+/>
 
-{/* Singapore */}
-![Man in suit smoking a cigarette in Singapore](https://ucarecdn.com/92dfea6d-27f0-439f-af3d-4ebe06515e07/-/preview/1000x667/)
-![boy wearing cap walking with family in Singapore](https://ucarecdn.com/43e4ef28-3ebf-4e10-b483-e64e400f57dd/-/preview/1000x667/)
-![boys posing for a photo in Singapore](https://ucarecdn.com/e9feb24b-f83b-44ac-b06b-4cf84b1f1ab6/-/preview/1000x667/)
+<Gallery
+  images={[
+    {
+      src: "https://ucarecdn.com/067a0fdc-2ac1-4df0-9c43-73a875971ee2/-/preview/1000x667/",
+      alt: "art in Busan, South Korea",
+    },
+    {
+      src: "https://ucarecdn.com/2479fb65-acc5-4e5b-8976-1445ac716777/-/preview/1000x667/",
+      alt: "group of tourists climbing a ladder to a roof that is off limits in Busan, South Korea",
+    },
+    {
+      src: "https://ucarecdn.com/ef45a63b-78d1-4133-a175-0e8757d66cd1/-/preview/1000x667/",
+      alt: "wall art in Busan, South Korea",
+    },
+    {
+      src: "https://ucarecdn.com/417174ad-bc92-416f-8007-f81435607c37/-/preview/1000x667/",
+      alt: "young guy having a moment in Busan, South Korea",
+    },
+    {
+      src: "https://ucarecdn.com/a50cd232-3437-4e65-adba-ca27797b1aa1/-/preview/1000x667/",
+      alt: "someone carrying two iced americanos in a cool outfit in Busan, South Korea",
+    },
+    {
+      src: "https://ucarecdn.com/b9fd807e-adc1-4fd8-af54-a5395d253492/-/preview/1000x667/",
+      alt: "family in hanboks in Busan, South Korea",
+    },
+    {
+      src: "https://ucarecdn.com/53a61a72-e63f-4105-9834-db457634b45f/-/preview/1000x667/",
+      alt: "group in hanboks walking up stairs in Busan, South Korea",
+    },
+  ]}
+  description={[
+    "Last summer, I took a trip to Asia with my Dad. We went from Seoul staying in the Jongno area, Singapore, Busan in the Haeundae area, and then I flew to Fukuoka on my own, and then took a train to Tokyo staying in Shibuya near Harajuku. Went on a lot more walks, and tried to keep my camera out as much as possible. Here are some photos from the trip.",
+    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  ]}
+/>
 
-{/* Seoul */}
-![girl on her phone walking through palace grounds](https://ucarecdn.com/125a7965-d484-4143-8faa-758a683a5282/-/preview/1000x667/)
-![temple roof near hotel in Seoul, South Korea](https://ucarecdn.com/c19e6a96-3fbb-4952-826a-ca5c655416e0/-/preview/1000x667/)
-![rooftop gym](https://ucarecdn.com/d2bae898-80d2-42b7-855e-783bf075e413/-/preview/1000x667/)
-![lady in hanbok walking through a crowd of people in Seoul, South Korea](https://ucarecdn.com/92ecc53d-a84f-4242-bda6-e055fc839909/-/preview/1000x667/)
-![dad listening to a record in a cafe in Seoul, South Korea](https://ucarecdn.com/56e8c41b-70c0-4ecb-b313-4d8fd596d4eb/-/preview/1000x750/)
-
-{/* Busan */}
-![art in Busan, South Korea](https://ucarecdn.com/067a0fdc-2ac1-4df0-9c43-73a875971ee2/-/preview/1000x667/)
-![group of tourists climbing a ladder to a roof that is off limits in Busan, South Korea](https://ucarecdn.com/2479fb65-acc5-4e5b-8976-1445ac716777/-/preview/1000x667/)
-![wall art in Busan, South Korea](https://ucarecdn.com/ef45a63b-78d1-4133-a175-0e8757d66cd1/-/preview/1000x667/)
-![young guy having a moment in Busan, South Korea](https://ucarecdn.com/417174ad-bc92-416f-8007-f81435607c37/-/preview/1000x667/)
-![someone carrying two iced americanos in a cool outfit in Busan, South Korea](https://ucarecdn.com/a50cd232-3437-4e65-adba-ca27797b1aa1/-/preview/1000x667/)
-![family in hanboks in Busan, South Korea](https://ucarecdn.com/b9fd807e-adc1-4fd8-af54-a5395d253492/-/preview/1000x667/)
-![group in hanboks walking up stairs in Busan, South Korea](https://ucarecdn.com/53a61a72-e63f-4105-9834-db457634b45f/-/preview/1000x667/)
-
-{/* Tokyo */}
-
-![famous designer bathroom in Shibuya, Tokyo, Japan](https://ucarecdn.com/2d66687e-4be3-41c1-8ef5-1c8ae192dc74/-/preview/1000x750/)
-![topologie universal works collaboration helmet bag](https://ucarecdn.com/90ebaf22-a5db-49f8-9eb3-140c07428118/-/preview/750x999/)
-![posing with topologie universal works collaboration helmet bag](https://ucarecdn.com/96638a28-bde4-4a1c-b28b-e62e03e84b8f/-/preview/750x999/)
-![nagi ramen in Golden Gai, Tokyo, Japan - probably my favorite bowl of ramen ever](https://ucarecdn.com/8f21cec1-8bda-4893-8f0b-f1879503a9ca/-/preview/750x1000/)
-![clam based ramen in Shimokitazawa, Tokyo, Japan](https://ucarecdn.com/3543ef9f-5ebb-47bc-9e99-7fd744a6d3a2/-/preview/750x1000/)
-![physical edition of Fantasy Life I for Nintendo Switch, which isn't sold in the US](https://ucarecdn.com/f6e80a7f-b46b-4d0a-aa90-1c8f89be0159/-/preview/750x1000/)
-
-</div>
-
-<div class="description">
-
-Last summer, I took a trip to Asia with my Dad. We went from Seoul staying in the Jongno area, Singapore, Busan in the Haeundae area, and then I flew to Fukuoka on my own, and then took a train to Tokyo staying in Shibuya near Harajuku. Went on a lot more walks, and tried to keep my camera out as much as possible. Here are some photos from the trip.
-
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-</div>
-
-</section>
+<Gallery
+  images={[
+    {
+      src: "https://ucarecdn.com/2d66687e-4be3-41c1-8ef5-1c8ae192dc74/-/preview/1000x750/",
+      alt: "famous designer bathroom in Shibuya, Tokyo, Japan",
+    },
+    {
+      src: "https://ucarecdn.com/90ebaf22-a5db-49f8-9eb3-140c07428118/-/preview/750x999/",
+      alt: "topologie universal works collaboration helmet bag",
+    },
+    {
+      src: "https://ucarecdn.com/96638a28-bde4-4a1c-b28b-e62e03e84b8f/-/preview/750x999/",
+      alt: "posing with topologie universal works collaboration helmet bag",
+    },
+    {
+      src: "https://ucarecdn.com/8f21cec1-8bda-4893-8f0b-f1879503a9ca/-/preview/750x1000/",
+      alt: "nagi ramen in Golden Gai, Tokyo, Japan - probably my favorite bowl of ramen ever",
+    },
+  ]}
+  description={[
+    "Last summer, I took a trip to Asia with my Dad. We went from Seoul staying in the Jongno area, Singapore, Busan in the Haeundae area, and then I flew to Fukuoka on my own, and then took a train to Tokyo staying in Shibuya near Harajuku. Went on a lot more walks, and tried to keep my camera out as much as possible. Here are some photos from the trip.",
+    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  ]}
+/>
