@@ -5,19 +5,12 @@ pubDate: "April 14 2024"
 cover: "https://ucarecdn.com/f636ed81-5d44-43bc-a971-977b5fc11f6f/-/preview/1000x666/"
 coverAlt: "A red truck with the word 'Howdy' on the side, parked near Manor in Austin, Texas"
 tags: [Fuji X100V, Featured, Austin]
+variant: "photo"
 ---
 
-import Slideshow from "../../components/Slideshow/Slideshow.astro";
+import Gallery from "../../components/Gallery.astro";
 
-I'm trying a slightly different setup with my [Fuji X100V](https://brianhan.com/tags/fuji%20x100v/). Instead of relying on film simulation bracketing, I'm manually switching between film recipes in my custom profiles. I'm still using [Reggie's Portra](https://reggiebphotography.com/blog/the-most-versatile-fujifilm-x-trans-iv-film-simulation-recipe-reggies-portra), and I've also added [Reggie's HP5 B&W](https://reggiebphotography.com/blog/the-most-versatile-fujifilm-x-trans-iv-film-simulation-recipe-reggies-hp5) film recipe in the rotation. I think his black-and-white recipe looks noticeably better than using Acros stock.
-
-For me, the tough part with wanting to use both of these film recipes is taking the time to switch between them. It's definitely not as convenient as using film sim bracketing.
-
-## El Chilito on Manor
-
-<Slideshow
-  is:client
-  initialFullView
+<Gallery
   images={[
     {
       src: "https://ucarecdn.com/f980ce14-9eea-4c13-8769-5c5116276fca/-/preview/1000x667/",
@@ -31,21 +24,6 @@ For me, the tough part with wanting to use both of these film recipes is taking 
       src: "https://ucarecdn.com/7ebace96-5c7d-4541-8c8d-0f4647399305/-/preview/1000x666/",
       alt: "el-chilito-couple",
     },
-  ]}
-/>
-
----
-
-## Cool dudes, and their rides
-
-I was surprised to get photos of dudes riding their bikes that weren't terrible! I was using single-point auto focus, and felt like my shots were getting off a little slow, but it worked out. I'll have to start learning how to properly range focus for moments like this.
-
-Also, I'm pretty sure one of these guys is headed to the kite festival. Can you guess who?
-
-<Slideshow
-  is:client
-  initialFullView
-  images={[
     {
       src: "https://ucarecdn.com/fca85359-dc5a-44dd-ab56-ed514e91dc12/-/preview/1000x667/",
       alt: "man with beard riding a bike with a bus in the background",
@@ -82,5 +60,11 @@ Also, I'm pretty sure one of these guys is headed to the kite festival. Can you 
       src: "https://ucarecdn.com/f636ed81-5d44-43bc-a971-977b5fc11f6f/-/preview/1000x666/",
       alt: "howdy-truck",
     },
+  ]}
+  description={[
+    `I'm trying a slightly different setup with my Fuji X100V. Instead of relying on film simulation bracketing, I'm manually switching between film recipes in my custom profiles.`,
+    `For me, the tough part with wanting to use both of these film recipes is taking the time to switch between them. It's definitely not as convenient as using film sim bracketing.`,
+    `I was surprised to get photos of dudes riding their bikes that weren’t terrible! I was using single-point auto focus, and felt like my shots were getting off a little slow, but it worked out. I’ll have to start learning how to properly range focus for moments like this.`,
+    `Also, I’m pretty sure one of these guys is headed to the kite festival. Can you guess who?`,
   ]}
 />
