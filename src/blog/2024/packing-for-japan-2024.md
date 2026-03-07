@@ -5,6 +5,7 @@ pubDate: "Oct 31 2024"
 cover: "https://ucarecdn.com/a10ef89f-6529-473a-9982-5ede5e5bb7a6/-/preview/1000x734/"
 coverAlt: "My packing list for Japan in 2024"
 tags: [Japan]
+isPublished: true
 ---
 
 Going to Japan, again!

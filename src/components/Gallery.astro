@@ -12,13 +12,7 @@ interface Props {
   links?: { label: string; href: string }[];
 }
 
-const {
-  images,
-  description,
-  alignment = "start",
-  id = "gallery-dialog",
-  links,
-} = Astro.props;
+const { images, alignment = "start", id = "gallery-dialog" } = Astro.props;
 ---
 
 <section class="container">
@@ -42,33 +36,24 @@ const {
       ? { alignSelf: "start", top: 0 }
       : { alignSelf: "end", bottom: 0 }}
   >
-    {
-      typeof description === "string" ? (
-        <p>{description}</p>
-      ) : description === null ? null : (
-        description?.map((paragraph) => <p>{paragraph}</p>)
-      )
-    }
-
-    {
-      links && (
-        <hr/>
-        <div class="links">
-          {links.map((link) => (
-            <a href={link.href} target="_blank" rel="noopener noreferrer">
-              {link.label}
-            </a>
-          ))}
-        </div>
-      )
-    }
+    <slot />
   </div>
 </section>
 
 <dialog id={id}>
   <div class="dialog-content">
     <button autofocus class="close-button">
-      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="121.31" height="122.876" viewBox="0 0 121.31 122.876"><path fill-rule="evenodd" d="M90.914 5.296a17.66 17.66 0 0 1 25.154-.068c6.961 6.995 6.991 18.369.068 25.397L85.743 61.452l30.425 30.855c6.866 6.978 6.773 18.28-.208 25.247-6.983 6.964-18.21 6.946-25.074-.031L60.669 86.881 30.395 117.58a17.66 17.66 0 0 1-25.154.068c-6.961-6.995-6.992-18.369-.068-25.397l30.393-30.827L5.142 30.568c-6.867-6.978-6.773-18.28.208-25.247 6.983-6.963 18.21-6.946 25.074.031l30.217 30.643z" clip-rule="evenodd"/></svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xml:space="preserve"
+        width="121.31"
+        height="122.876"
+        viewBox="0 0 121.31 122.876"
+        ><path
+          fill-rule="evenodd"
+          d="M90.914 5.296a17.66 17.66 0 0 1 25.154-.068c6.961 6.995 6.991 18.369.068 25.397L85.743 61.452l30.425 30.855c6.866 6.978 6.773 18.28-.208 25.247-6.983 6.964-18.21 6.946-25.074-.031L60.669 86.881 30.395 117.58a17.66 17.66 0 0 1-25.154.068c-6.961-6.995-6.992-18.369-.068-25.397l30.393-30.827L5.142 30.568c-6.867-6.978-6.773-18.28.208-25.247 6.983-6.963 18.21-6.946 25.074.031l30.217 30.643z"
+          clip-rule="evenodd"></path></svg
+      >
     </button>
     {images.map((image) => <img src={image.src} alt={image.alt} />)}
   </div>

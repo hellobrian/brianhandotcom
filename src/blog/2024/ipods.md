@@ -1,5 +1,5 @@
 ---
-title: "iPods: Kindles for Music"
+title: "iPods"
 description: "Party like it's 2004"
 pubDate: "Mar 16 2024"
 cover: "https://ucarecdn.com/9d08c170-8c4f-43c2-898e-129442b77afe/-/preview/1000x666/"
