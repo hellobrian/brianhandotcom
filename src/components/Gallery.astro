@@ -6,9 +6,10 @@ interface ImageData {
 
 interface Props {
   images: ImageData[];
-  description: string[] | string | null;
+  description?: string[] | string;
   alignment?: "start" | "end";
   id?: string;
+  links?: { label: string; href: string }[];
 }
 
 const {
@@ -16,6 +17,7 @@ const {
   description,
   alignment = "start",
   id = "gallery-dialog",
+  links,
 } = Astro.props;
 ---
 
@@ -45,6 +47,19 @@ const {
         <p>{description}</p>
       ) : description === null ? null : (
         description?.map((paragraph) => <p>{paragraph}</p>)
+      )
+    }
+
+    {
+      links && (
+        <hr/>
+        <div class="links">
+          {links.map((link) => (
+            <a href={link.href} target="_blank" rel="noopener noreferrer">
+              {link.label}
+            </a>
+          ))}
+        </div>
       )
     }
   </div>
@@ -233,5 +248,12 @@ const {
 
   .container > .description > p:first-child {
     margin-block-start: 1rem;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    block-size: fit-content;
   }
 </style>
