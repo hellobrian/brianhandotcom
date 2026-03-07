@@ -1,0 +1,47 @@
+---
+import type { CollectionEntry } from "astro:content";
+import PhotoBlogHead from "../components/PhotoBlogHead.astro";
+import BaseLayout from "./BaseLayout.astro";
+import Tags from "../components/Tags.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+
+type Props = CollectionEntry<"blog">["data"];
+
+const { title, description, pubDate, updatedDate, tags } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <PhotoBlogHead title={title} description={description} slot="head" />
+  <main>
+    <article>
+      <div class="photo">
+        <div class="title">
+          <div class="date">
+            <FormattedDate
+              date={pubDate}
+              lastUpdated={`Last updated on ${updatedDate?.toLocaleDateString(
+                "en-us",
+                {
+                  year: "numeric",
+                  month: "short",
+                  day: "numeric",
+                },
+              )}`}
+            />
+          </div>
+          <h1>{title}</h1>
+        </div>
+        <hr />
+        <slot />
+        <hr />
+        {tags.length > 0 && <Tags tags={tags} />}
+      </div>
+    </article>
+  </main>
+</BaseLayout>
+
+<style>
+  .title {
+    text-align: center;
+  }
+</style>

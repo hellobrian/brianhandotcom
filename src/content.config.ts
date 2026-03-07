@@ -21,6 +21,7 @@ const blog = defineCollection({
       coverAlt: z.string(),
       tags: z.array(z.string()),
       isPublished: z.boolean().optional().default(true),
+      variant: z.enum(["standard", "photo"]).default("standard"),
     }),
 });
 
@@ -37,7 +38,7 @@ const data = defineCollection({
         location: z.string(),
         responsibilities: z.array(z.string()),
         highlighted: z.boolean().optional().default(true),
-      })
+      }),
     ),
     contact: z.object({
       email: z.string().email(),
@@ -52,7 +53,7 @@ const data = defineCollection({
         institution: z.string(),
         degree: z.string(),
         graduationYear: z.number(),
-      })
+      }),
     ),
     skills: z.object({
       languages: z.array(z.string()),

@@ -5,15 +5,12 @@ pubDate: "Mar 27 2024"
 cover: "https://ucarecdn.com/b283701b-c158-475b-8356-2d9f49b1edb1/-/preview/1000x666/"
 coverAlt: "building under construction in north Austin, Texas"
 tags: [Ricoh GRIIIx, Fuji X100V, Austin]
+variant: "photo"
 ---
 
-import Slideshow from "../../components/Slideshow/Slideshow.astro";
+import Gallery from "../../components/Gallery.astro";
 
-A few photos taken on different walks to my neighborhood park. Some photos were taken on my Ricoh GRIIIx and the rest with my Fuji X100V.
-
-<Slideshow
-  is:client
-  initialFullView
+<Gallery
   images={[
     {
       src: "https://ucarecdn.com/d2c6f94f-b85d-4bda-b381-9b751775141e/-/preview/1000x1000/",
@@ -52,4 +49,5 @@ A few photos taken on different walks to my neighborhood park. Some photos were 
       alt: "doggo",
     },
   ]}
+  description={`A few photos taken on different walks to my neighborhood park. Some photos were taken on my Ricoh GRIIIx and the rest with my Fuji X100V.`}
 />

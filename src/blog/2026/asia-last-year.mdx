@@ -6,21 +6,45 @@ cover: "https://ucarecdn.com/48ab0d34-a19c-4f23-9f84-025adf6a567c/-/preview/1000
 coverAlt: "dad listening to a record in a cafe in Seoul, South Korea"
 tags: [Fuji X100V, Featured]
 isPublished: true
+variant: "photo"
 ---
 
-import Slideshow from "../../components/Slideshow/Slideshow.astro";
+import Gallery from "../../components/Gallery.astro";
 
-Last summer, I took a trip to Asia with my Dad. We went from Seoul staying in the Jongno area, Singapore, Busan in the Haeundae area, and then I flew to Fukuoka on my own, and then took a train to Tokyo staying in Shibuya near Harajuku. Went on a lot more walks, and tried to keep my camera out as much as possible. Here are some photos from the trip.
+<Gallery
+  id="seoul-gallery"
+  images={[
+    {
+      src: "https://ucarecdn.com/125a7965-d484-4143-8faa-758a683a5282/-/preview/1000x667/",
+      alt: "girl on her phone walking through Gyeongbokgung Palace grounds",
+    },
+    {
+      src: "https://ucarecdn.com/c19e6a96-3fbb-4952-826a-ca5c655416e0/-/preview/1000x667/",
+      alt: "temple roof near hotel in Seoul, South Korea",
+    },
+    {
+      src: "https://ucarecdn.com/d2bae898-80d2-42b7-855e-783bf075e413/-/preview/1000x667/",
+      alt: "rooftop gym",
+    },
+    {
+      src: "https://ucarecdn.com/92ecc53d-a84f-4242-bda6-e055fc839909/-/preview/1000x667/",
+      alt: "lady in hanbok walking through a crowd of people in Seoul, South Korea",
+    },
+    {
+      src: "https://ucarecdn.com/56e8c41b-70c0-4ecb-b313-4d8fd596d4eb/-/preview/1000x750/",
+      alt: "dad listening to a record in a cafe in Seoul, South Korea",
+    },
+  ]}
+  description={[
+    `Last summer, travelled to Asia with my Dad. We started out in Seoul staying in the Jongno area.`,
+    `Spent time taking in the sights and some tourist attractions but spent most of our time just exploring the city on foot, trying out restaurants, and seeing family.`,`I couldn't post everything but there's so much to do in Seoul. Lots of access to a wide variety of foods, some Michellin bib gourmad restaurants, an insane amount of coffeeshops, and of course the historical sites.`, `My first time in Korea was back in 2019 before this trip and I remember feeling some friction getting around but this time around it felt much more accessible and easy to navigate even without having a good grasp of the language. Being with my dad helped but even when I was on my own, I felt like I could get around with just English - which wasn't really the case in years before.`,
+    `Would love to go back and explore more of Seoul and Korea in general - so much more to see and do, and I feel like I only scratched the surface on this trip.`,
 
----
+]}
+/>
 
-## Singapore
-
----
-
-<Slideshow
-  is:client
-  initialFullView
+<Gallery
+  id="singapore-gallery"
   images={[
     {
       src: "https://ucarecdn.com/92dfea6d-27f0-439f-af3d-4ebe06515e07/-/preview/1000x667/",
@@ -30,115 +54,19 @@ Last summer, I took a trip to Asia with my Dad. We went from Seoul staying in th
       src: "https://ucarecdn.com/43e4ef28-3ebf-4e10-b483-e64e400f57dd/-/preview/1000x667/",
       alt: "boy wearing cap walking with family in Singapore",
     },
-  ]}
-/>
-
-<Slideshow
-  is:client
-  initialFullView
-  images={[
-    {
-      src: "https://ucarecdn.com/4a6de84b-4a9e-47d6-9781-cc15406e2075/-/preview/1000x667/",
-      alt: "boys posing for a photo in Singapore",
-    },
-    {
-      src: "https://ucarecdn.com/68b2f73a-2bea-4b89-8519-78facbfa86f9/-/preview/1000x667/",
-      alt: "boys posing for a photo in Singapore",
-    },
     {
       src: "https://ucarecdn.com/e9feb24b-f83b-44ac-b06b-4cf84b1f1ab6/-/preview/1000x667/",
       alt: "boys posing for a photo in Singapore",
     },
   ]}
-/>
-
----
-
-## Seoul
-
----
-
-<Slideshow
-  is:client
-  initialFullView
-  images={[
-    {
-      src: "https://ucarecdn.com/125a7965-d484-4143-8faa-758a683a5282/-/preview/1000x667/",
-      alt: "girl on her phone walking through palace grounds",
-    },
-    {
-      src: "https://ucarecdn.com/02a877d7-83c7-4e72-8c0b-1e2d59149309/-/preview/1000x667/",
-      alt: "group of people in hanboks posing for a photo in Seoul, South Korea",
-    },
-    {
-      src: "https://ucarecdn.com/c19e6a96-3fbb-4952-826a-ca5c655416e0/-/preview/1000x667/",
-      alt: "temple roof near hotel in Seoul, South Korea",
-    },
+  description={[
+    `We then headed to Singapore for a bit - I think I had the most fun taking my camera out around Haji Lane near the historical Sultan Mosque. Most of my favorite photos came from this area.`,
+    `Apart from that, we tried to hit up some of the Hawker centers for food, but I underestimated how popular some of these places would be. And with this being my first time in Singapore, all the cuisine was very new to me so it ended up being more enjoyable to try eating at the various food courts in the malls around the city. By local standards, they're probably not the most economical options, but totally worth it for the variety and convenience.`,
   ]}
 />
 
-<Slideshow
-  is:client
-  initialFullView
-  images={[
-    {
-      src: "https://ucarecdn.com/d2bae898-80d2-42b7-855e-783bf075e413/-/preview/1000x667/",
-      alt: "rooftop gym",
-    },
-    {
-      src: "https://ucarecdn.com/8fd949f7-2743-40c9-a364-d0cecdde7c6c/-/preview/1000x667/",
-      alt: "birds eye view of street",
-    },
-  ]}
-/>
-
-<Slideshow
-  is:client
-  initialFullView
-  images={[
-    {
-      src: "https://ucarecdn.com/c238b702-8194-4601-9549-bb879535da81/-/preview/1000x667/",
-      alt: "woman walking through park in Seoul, South Korea",
-    },
-    {
-      src: "https://ucarecdn.com/b3c3a0f3-072f-4dc3-8570-5cc34629e359/-/preview/1000x667/",
-      alt: "man sitting on yellow chair in Seoul, South Korea",
-    },
-    {
-      src: "https://ucarecdn.com/92ecc53d-a84f-4242-bda6-e055fc839909/-/preview/1000x667/",
-      alt: "lady in hanbok walking through a crowd of people in Seoul, South Korea",
-    },
-    {
-      src: "https://ucarecdn.com/e41378ae-b695-4e32-b845-5d900f445ba5/-/preview/1000x667/",
-      alt: "dad walking through park in Seoul, South Korea",
-    },
-  ]}
-/>
-
-<Slideshow
-  is:client
-  initialFullView
-  images={[
-    {
-      src: "https://ucarecdn.com/48ab0d34-a19c-4f23-9f84-025adf6a567c/-/preview/1000x667/",
-      alt: "dad sitting in a record cafe in Seoul, South Korea",
-    },
-    {
-      src: "https://ucarecdn.com/56e8c41b-70c0-4ecb-b313-4d8fd596d4eb/-/preview/1000x750/",
-      alt: "dad listening to a record in a cafe in Seoul, South Korea",
-    },
-  ]}
-/>
-
----
-
-## Busan
-
----
-
-<Slideshow
-  is:client
-  initialFullView
+<Gallery
+  id="busan-gallery"
   images={[
     {
       src: "https://ucarecdn.com/067a0fdc-2ac1-4df0-9c43-73a875971ee2/-/preview/1000x667/",
@@ -156,108 +84,28 @@ Last summer, I took a trip to Asia with my Dad. We went from Seoul staying in th
       src: "https://ucarecdn.com/417174ad-bc92-416f-8007-f81435607c37/-/preview/1000x667/",
       alt: "young guy having a moment in Busan, South Korea",
     },
-
-    {
-      src: "https://ucarecdn.com/dc5d1068-d358-4dab-8cff-a8e08c5b817b/-/preview/1000x667/",
-      alt: "women posing with wall art of BTS in Busan, South Korea",
-    },
     {
       src: "https://ucarecdn.com/a50cd232-3437-4e65-adba-ca27797b1aa1/-/preview/1000x667/",
       alt: "someone carrying two iced americanos in a cool outfit in Busan, South Korea",
     },
-
-]}
-/>
-
-<Slideshow
-  is:client
-  initialFullView
-  images={[
     {
       src: "https://ucarecdn.com/b9fd807e-adc1-4fd8-af54-a5395d253492/-/preview/1000x667/",
-      alt: "family in hanboks",
-    },
-    {
-      src: "https://ucarecdn.com/bf63a97b-c584-4e60-b5d8-d455447ffd24/-/preview/1000x667/",
-      alt: "group in hanboks reviewing photos in Busan, South Korea",
-    },
-    {
-      src: "https://ucarecdn.com/20a2ec08-8263-4b8e-b6ce-dfcb8591a3cd/-/preview/1000x667/",
-      alt: "couple taking a selfie in Busan, South Korea",
-    },
-    {
-      src: "https://ucarecdn.com/efbcfbfd-af64-4787-aab1-309c928af59b/-/preview/1000x667/",
-      alt: "couple walking down stairs in Busan, South Korea",
+      alt: "family in hanboks in Busan, South Korea",
     },
     {
       src: "https://ucarecdn.com/53a61a72-e63f-4105-9834-db457634b45f/-/preview/1000x667/",
       alt: "group in hanboks walking up stairs in Busan, South Korea",
     },
   ]}
-/>
-
----
-
-## Fukuoka
-
----
-
-<Slideshow
-  is:client
-  initialFullView
-  images={[
-    {
-      src: "https://ucarecdn.com/b47ee48f-fb80-4285-bb62-8611532a40c2/-/preview/1000x667/",
-      alt: "temple roof in Fukuoka, Japan",
-    },
-    {
-      src: "https://ucarecdn.com/b519c5fb-ea57-4bd0-81df-7e0587815589/-/preview/1000x667/",
-      alt: "temple roof in Fukuoka, Japan",
-    },
+  description={[
+    `And then we went back to Korea - we flew into Seoul and took the train down to Busan to stay in Haeundae. Close to the beach and a nice change of scenery. My main interest was to visit Gamcheon Culture Village.`,
+    `I had seen photos of this place before and it looked like a really cool area to explore and take photos in. It's touristy but still a nice place to walk around and take in the views of the city and really nice to admire all the art - pretty much every few steps you'll see some thing fantastic that's worth admiring.`,
+    `Also, if you couldn't already tell, tons of folks wearing hanboks in Korea. Nice to see people embracing the culture and I imagine it was pretty accessible for visitors to rent hanboks in the city.`,
   ]}
 />
 
-<Slideshow
-  is:client
-  initialFullView
-  images={[
-    {
-      src: "https://ucarecdn.com/d290f628-e220-42c8-a20c-87ce6157aaaf/-/preview/1000x667/",
-      alt: "guys practicing in Fukuoka, Japan",
-    },
-    {
-      src: "https://ucarecdn.com/b606e9e1-11cf-4233-ae77-56637ed9e47e/-/preview/1000x667/",
-      alt: "guys practicing in Fukuoka, Japan",
-    },
-  ]}
-/>
-
-<Slideshow
-  is:client
-  initialFullView
-  images={[
-    {
-      src: "https://ucarecdn.com/b1079358-b18e-40c6-b592-2d937af23ea3/-/preview/666x1000/",
-      alt: "man riding his bike in Fukuoka, Japan",
-    },
-    {
-      src: "https://ucarecdn.com/6b82e120-25f7-499c-a089-a70109c3e846/-/preview/666x1000/",
-      alt: "man fixing his shoe in Fukuoka, Japan",
-    },
-  ]}
-/>
-
----
-
-## Tokyo
-
----
-
-Didn't end up taking my camera with me around here - I was mainly focused on shopping 🛍️ and eating 🍜.
-
-<Slideshow
-  is:client
-  initialFullView
+<Gallery
+  id="tokyo-gallery"
   images={[
     {
       src: "https://ucarecdn.com/2d66687e-4be3-41c1-8ef5-1c8ae192dc74/-/preview/1000x750/",
@@ -275,13 +123,11 @@ Didn't end up taking my camera with me around here - I was mainly focused on sho
       src: "https://ucarecdn.com/8f21cec1-8bda-4893-8f0b-f1879503a9ca/-/preview/750x1000/",
       alt: "nagi ramen in Golden Gai, Tokyo, Japan - probably my favorite bowl of ramen ever",
     },
-    {
-      src: "https://ucarecdn.com/3543ef9f-5ebb-47bc-9e99-7fd744a6d3a2/-/preview/750x1000/",
-      alt: "clam based ramen in Shimokitazawa, Tokyo, Japan",
-    }, {
-      src: "https://ucarecdn.com/f6e80a7f-b46b-4d0a-aa90-1c8f89be0159/-/preview/750x1000/",
-      alt: "physical edition of Fantasy Life I for Nintendo Switch, which isn't sold in the US",
-    },
-
-]}
+  ]}
+  description={[
+    `Then we parted ways here - he flew back to the US and I continued my trip in Japan; I flew to Fukuoka on my own, and then took a train to Tokyo staying in Shibuya near Harajuku. Went on a lot more walks, but didn't really keep my camera on me. Was more interested in shopping this time around.`,
+    `I'm particularly excited for the Topologie x Universal Works collaboration helmet bag I got. Sort of a cheaper alternative to a Porter Yoshida Tanker bag but slightly more functional for my carry style. I love the rope loops that can flip around for hand or shoulder carry.`,
+    `I was also pretty stoked for getting a physical copy of Fantasy Life for Nintendo Switch. One of the few games I knew I could import and play without needing to know Japanese. And it's just nice to have a physical copy since it's not sold in the US.`,
+    `And of course, I had to hit up Nagi Ramen in Golden Gai. It's probably my favorite bowl of ramen after so many years of coming to Japan.`,
+  ]}
 />
