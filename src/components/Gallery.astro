@@ -8,14 +8,31 @@ interface Props {
   images: ImageData[];
   description: string[] | string | null;
   alignment?: "start" | "end";
+  id?: string;
 }
 
-const { images, description, alignment = "start" } = Astro.props;
+const {
+  images,
+  description,
+  alignment = "start",
+  id = "gallery-dialog",
+} = Astro.props;
 ---
 
 <section class="container">
   <div class="gallery">
-    {images.map((image) => <img src={image.src} alt={image.alt} />)}
+    {
+      images.map((image) => (
+        <div class="gallery-item">
+          <img src={image.src} alt={image.alt} />
+          <button
+            aria-label="open gallery"
+            type="button"
+            data-trigger={`gallery-dialog-trigger-${id}`}
+          />
+        </div>
+      ))
+    }
   </div>
   <div
     class="description"
@@ -33,14 +50,78 @@ const { images, description, alignment = "start" } = Astro.props;
   </div>
 </section>
 
+<dialog id={id}>
+  <div class="dialog-content">
+    <button autofocus class="close-button">&times;</button>
+    {images.map((image) => <img src={image.src} alt={image.alt} />)}
+  </div>
+</dialog>
+
+<script is:inline define:vars={{ id }}>
+  const dialog = document.getElementById(id);
+  const triggerList = document.querySelectorAll(
+    `[data-trigger='gallery-dialog-trigger-${id}']`,
+  );
+
+  if (triggerList && dialog) {
+    triggerList.forEach((trigger) => {
+      trigger.addEventListener("click", () => {
+        dialog.showModal();
+      });
+    });
+
+    dialog.querySelector("button")?.addEventListener("click", () => {
+      dialog.close();
+    });
+  }
+</script>
+
+<!-- Dialog styles -->
 <style>
+  dialog {
+    inline-size: 100%;
+    block-size: 100%;
+  }
+  .dialog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .dialog-content .close-button {
+    position: fixed;
+    bottom: 1rem;
+    font-size: 44px;
+    inline-size: 44px;
+    block-size: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    border: 2px solid transparent;
+  }
+
+  .dialog-content .close-button:hover {
+    cursor: pointer;
+  }
+
+  .dialog-content .close-button:focus {
+    outline: 4px solid var(--accent-light);
+  }
+</style>
+
+<!-- Gallery styles -->
+<style>
+  /* container */
   .container {
     position: relative;
     display: grid;
     grid-template-areas: "gallery description";
     grid-template-columns: 960px 1fr;
     gap: 2rem;
-    inline-size: min(100%, 1440px);
+    inline-size: min(100%, 1600px);
     margin: 0 auto;
   }
 
@@ -53,14 +134,18 @@ const { images, description, alignment = "start" } = Astro.props;
     }
   }
 
+  /* gallery */
   .container > .gallery {
     grid-area: gallery;
     position: relative;
     padding-block-start: 0rem;
     align-self: start;
+    display: grid;
+    gap: 1rem;
+    margin-block-end: 1rem;
   }
 
-  .container > .gallery > img {
+  .container > .gallery * {
     inline-size: 100%;
   }
 
@@ -77,17 +162,56 @@ const { images, description, alignment = "start" } = Astro.props;
       scroll-behavior: smooth;
     }
 
-    .container > .gallery > img {
+    .container > .gallery > * {
       flex: 0 0 auto;
       scroll-snap-align: start;
       width: 100%;
       margin-right: 1rem;
-      aspect-ratio: 1.5;
+      aspect-ratio: 16 / 9;
       object-fit: contain;
       border-radius: 8px;
     }
   }
 
+  /* gallery item */
+  .gallery-item {
+    display: grid;
+  }
+
+  .gallery-item > * {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .gallery-item > button {
+    background: rgba(0, 0, 0, 0);
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  .gallery-item > button:focus {
+    outline: 4px solid var(--accent-light);
+    outline-offset: 2px;
+  }
+
+  .gallery-item > button:hover {
+    background: rgba(0, 0, 0, 0.1);
+    transition:
+      box-shadow 200ms ease-in-out,
+      background 200ms ease-in-out;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+  }
+
+  .gallery-item > img {
+    object-fit: cover;
+  }
+
+  /* description */
   .container > .description {
     grid-area: description;
     position: sticky;
