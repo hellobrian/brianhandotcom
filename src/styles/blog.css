@@ -28,7 +28,6 @@
   }
 
   .prose > * {
-    grid-column: 1 / span 1;
     inline-size: 100%;
   }
 }
