@@ -1,0 +1,153 @@
+---
+title: "Sticky side content"
+description: "Some photos from my trip to Asia last year"
+pubDate: "Mar 9 2026"
+cover: "/images/blog/2026/sticky-side-content/IMG_2506.png"
+coverAlt: "dad listening to a record in a cafe in Seoul, South Korea"
+tags: [Featured, Astro, CSS, HTML]
+isPublished: true
+---
+
+import StickySides from "../../components/Examples/StickySides.astro";
+
+## I wanna scroll
+
+I found a better way for me to display photos on my website. I set out to borrow a scrolling pattern I had seen all over the internet - on [The Verge](https://www.theverge.com/), this cool product page for a [GBA Pixel Book](https://www.bitmapbooks.com/products/the-gba-pixel-book), and tons of retail product pages like [this page for a Ralph Lauren bag](https://www.ralphlauren.com/men-accessories-bags/heritage-leather-tote/100029488.html?cgid=men-accessories-bags#start=1&cgid=men-accessories-bags), and [this page for these penny loafers from Banana Republic](https://bananarepublic.gap.com/browse/product.do?pid=8242830020105&vid=1#pdp-page-content).
+
+I didn't love the experience of having mixed stacked content by default on large screens - there's so much space and I have to scroll down to see some pictures, then some text, then some more pictures then another bit of text, etc. Nothing wrong with that but I started thinking it would be better to just stick the text to the side, so it's always visible and scrolling the page is centered around scrolling through photos.
+
+So that's what I did.
+
+On my [last blog post](https://brianhan.com/blog/2026/asia-last-year/) I implemented a new layout where I could scroll through one (or many) lists of photos, while written content associated with those photos could stick to the side while you scroll.
+
+This is nothing new (because we can see it being done everywhere), but this is new for me - never had to implement something like this before so I wanted to leave a note here for myself in case I forget how to do it.
+
+## Demo
+
+Here's an example of how this works in practice.
+
+Pretend this main column of content is the content you want to scroll through - a bunch of images, maybe some code, it's whatever you want to scroll through as the main content.
+
+For this demo, I just put some tall pokemon and some doomscroll gifs in here.
+
+<StickySides variant="first">
+
+![long meowth](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGhtanhyeThkaXFiNDlodG96NXVxaGh3eGdxNmR4ZzNydnI3cHljMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/frPnnZv9NJYfeldxr2/giphy.gif)
+
+![keep scrolling](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzNmc1aDg3ZHR1bnl6ejcyMGZ4dHpkYXp4ZXVsOG53eW42c2IyeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l41Ygr7sR5limRkek/giphy.gif)
+
+![long executor](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjdjYTl0bGZsMzIzdmx6bm9qbTQ5amthZm9oYnplY242ZDlwYmllNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/v64rLJDOr2douidJj6/giphy.gif)
+
+</StickySides>
+
+<StickySides variant="next">
+
+![long meowth](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGhtanhyeThkaXFiNDlodG96NXVxaGh3eGdxNmR4ZzNydnI3cHljMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/frPnnZv9NJYfeldxr2/giphy.gif)
+
+![keep scrolling](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBzNmc1aDg3ZHR1bnl6ejcyMGZ4dHpkYXp4ZXVsOG53eW42c2IyeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l41Ygr7sR5limRkek/giphy.gif)
+
+![long executor](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjdjYTl0bGZsMzIzdmx6bm9qbTQ5amthZm9oYnplY242ZDlwYmllNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/v64rLJDOr2douidJj6/giphy.gif)
+
+</StickySides>
+
+## Code
+
+Here's the code I'm using for this website. You can also find the code in my Github repo, see [`StickySides.astro`]().
+
+### HTML
+
+```html
+<div class="container">
+  <div class="container__content--left">
+    <!-- Some content here -->
+    <slot name="left">
+      <aside>
+        <blockquote>
+          This is the left sticky content. It will stay at the top of the
+          viewport as you scroll through the center content. And on small
+          screens this will stack on top.
+        </blockquote>
+      </aside>
+    </slot>
+  </div>
+  <div class="container__content--center">
+    <!-- Long list of content to scroll through like images -->
+    <slot />
+  </div>
+  <div class="container__content--right">
+    <!-- Some content here -->
+    <slot name="right">
+      <aside>
+        <blockquote>
+          This is the right sticky content. It will stay at the bottom of the
+          viewport as you scroll through the center content. And on small
+          screens this will stack on the bottom.
+        </blockquote>
+      </aside>
+    </slot>
+  </div>
+</div>
+```
+
+### CSS
+
+```css
+/* css */
+.container {
+  /* Blog uses 3 column layout - make sure container spans all 3 columns */
+  grid-column: 1 / span 3;
+  grid-template-columns: 1fr 64ch 1fr;
+  position: relative;
+  display: grid;
+  gap: 1rem;
+}
+
+.container__content--left {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  padding-block-start: 1rem;
+}
+
+.container__content--center {
+  /* No styles needed here. 
+  Content will simply stack on top of each other so you can scroll through it. */
+  padding-inline: 16rem !important;
+}
+
+.container__content--right {
+  position: sticky;
+  bottom: 0;
+  align-self: end;
+  padding-block-end: 1rem;
+}
+
+/* small screens */
+@media screen and (width < 1280px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .container__content--center {
+    padding-inline: 1rem !important;
+  }
+
+  .container__content--left,
+  .container__content--right {
+    position: static;
+    max-inline-size: 64ch;
+    margin: 0 auto;
+    margin-block-end: 2rem;
+  }
+}
+```
+
+## Wrapping up
+
+<StickySides variant="last">
+
+Not much to it - `position: sticky` is doing a lot of the heavy lifting here. When I was first trying this out, I got tripped up on `position: sticky` not working. If you're using `grid` or `flex`, be sure to use `align-self: start` or `align: end` accordingly.
+
+You'll also notice that we do end up having to stack content once screens get too small since there's only so much horizontal real estate to work with. In that case, set a breakpoint and set the left and right columns to `position: static`.
+
+</StickySides>

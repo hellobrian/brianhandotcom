@@ -1,61 +1,34 @@
 .prose {
   display: grid;
-  grid-template-columns: 1fr 1fr 720px 1fr 1fr;
-  grid-auto-flow: dense;
+  grid-template-columns: 1fr 64ch 1fr;
+  grid-column: 1 / span 3;
+  inline-size: 100%;
   gap: 1rem;
-  padding: 1em;
   color: rgb(var(--gray-dark));
-  justify-items: center;
 }
 
-.prose > *:not(img, ul, .img) {
-  grid-column: 3 / span 1;
-  width: 100%;
+.prose > * {
+  grid-column: 2 / span 1;
 }
 
+/* reset */
 .prose p {
   margin: 0;
 }
 
-.prose > h2 {
-  width: 100%;
-  margin-top: 1rem;
-}
-.prose > img {
-  grid-column: 2 / span 3;
+.prose img {
+  inline-size: 100%;
+  block-size: auto;
 }
 
-.prose > ul {
-  margin: 0;
-  padding: 0;
-  grid-column: 3 / span 1;
-  justify-self: left;
-  margin-left: 3rem;
-}
-
-.prose p + img {
-  margin-top: 1rem;
-}
-
-.prose h1,
-.prose h2,
-.prose h3,
-.prose h4,
-.prose h5,
-.prose h6 {
-  text-align: center;
-}
-
-@media screen and (width < 900px) {
+/* small screens */
+@media screen and (width < 768px) {
   .prose {
     grid-template-columns: 1fr;
-    padding: 0;
   }
-  .prose > *:not(img, .img),
-  .prose > img {
-    grid-column: 1 / -1;
-  }
-  .prose > ul {
-    margin-left: 1rem;
+
+  .prose > * {
+    grid-column: 1 / span 1;
+    inline-size: 100%;
   }
 }
