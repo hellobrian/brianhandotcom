@@ -27,8 +27,7 @@
     grid-template-columns: 1fr;
   }
 
-  .prose > * {
-    grid-column: 1 / span 1;
+  .prose > *:not(pre) {
     inline-size: 100%;
   }
 }
