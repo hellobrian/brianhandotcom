@@ -50,8 +50,6 @@ For this demo, I just put some tall pokemon and some doomscroll gifs in here.
 
 </StickySides>
 
-<StickySides variant="last">
-
 ## Code
 
 Here's the code I'm using for this website. You can also find the code in my Github repo, see [`StickySides.astro`]().
@@ -82,8 +80,8 @@ Here's the code I'm using for this website. You can also find the code in my Git
       <aside>
         <blockquote>
           This is the right sticky content. It will stay at the bottom of the
-          viewport as you scroll through the center content.And on small screens
-          this will stack on the bottom.
+          viewport as you scroll through the center content. And on small
+          screens this will stack on the bottom.
         </blockquote>
       </aside>
     </slot>
@@ -143,5 +141,13 @@ Here's the code I'm using for this website. You can also find the code in my Git
   }
 }
 ```
+
+## Wrapping up
+
+<StickySides variant="last">
+
+Not much to it - `position: sticky` is doing a lot of the heavy lifting here. When I was first trying this out, I got tripped up on `position: sticky` not working. If you're using `grid` or `flex`, be sure to use `align-self: start` or `align: end` accordingly.
+
+You'll also notice that we do end up having to stack content once screens get too small since there's only so much horizontal real estate to work with. In that case, set a breakpoint and set the left and right columns to `position: static`.
 
 </StickySides>
