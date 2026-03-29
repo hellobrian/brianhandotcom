@@ -26,12 +26,7 @@ const SlideshowComponent = ({
   initialFullView = true,
 }: SlideshowProps) => {
   const [currentImage, setCurrentImage] = React.useState(images[0]);
-  const [isFullView, setFullView] = React.useState(initialFullView);
-
-  // const toggleFullView = () => {
-  //   if (window.innerWidth <= 480) return;
-  //   setFullView(!isFullView);
-  // };
+  const [isFullView] = React.useState(initialFullView);
 
   return (
     <>
