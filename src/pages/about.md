@@ -8,6 +8,8 @@ I'm a Senior UX Developer based in Austin, TX specializing in
 creating user-friendly interfaces and improving user experiences using
 HTML, CSS, and React. My focus is on collaborating closely with designers, engineers and product managers to deliver solutions that are scalable, responsive, and accessible.
 
+Currently, I'm at [Electronic Arts (EA)](https://www.ea.com/) working on building and growing our internal design system powering the [EA Help](https://help.ea.com/en/) website, the Accounts page, and the [FC Player Stats](https://www.ea.com/en/games/ea-sports-fc/fc-26/player-stats) page. 
+
 At **[Indeed](https://www.indeed.com/hire)**, I worked on multiple platforms for employers: Indeed Hire, [Smart Sourcing](https://www.indeed.com/employers/smart-sourcing), and [Premium Job Sourcing](https://www.indeed.com/hire/cs/sponsored-jobs) - all of which aimed to help employers hire people more easily and efficiently. I implemented complex designs and layouts while helping teams to deliver more accessible experiences using semantic HTML and tools like aXe.
 
 At **[IBM](https://www.ibm.com/)**, I helped start [Carbon Design Systems](https://carbondesignsystem.com/), IBM's open source design system that leverages IBM Design Language. This helped to standardize code and interfaces on large scale basis at IBM - delievering a more consistent experience to users and developers.
